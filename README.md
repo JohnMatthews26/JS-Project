@@ -34,7 +34,7 @@ This app is a single page app with a game screen, How To Play button that opens 
   -  Vanilla JS and jquery for the logic of the fireworks
   -  Easel.js and HTML5 Canvas for display
   -  Webpack
-  -
+  
   I plan on having the following files in my project:
 
   - ```firework.js``` This file will use Easel.js to dictate the appearance of the fireworks, and will be responsible for creating firework objects.
