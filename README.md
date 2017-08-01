@@ -16,6 +16,7 @@ The user has the ability to do the following:
 -  Decide when each firework will go off
 -  Select the height of each firework
 -  Color scheme of each firework
+-  See fireworks go off
 
 This project also includes:
 
@@ -32,13 +33,14 @@ This app is a single page app with a game screen, How To Play button that opens 
 ## Technologies
   My initial plan for technologies is the following:
   -  Vanilla JS and jquery for the logic of the fireworks
-  -  Easel.js and HTML5 Canvas for display
+  -  Easel.js and HTML5 Canvas for display. Easel.js will be used to create the firework objects and works well with HTML5 Canvas to easily move objects on the canvas by altering the x and y coordinates.
   -  Webpack
-  
+
   I plan on having the following files in my project:
 
   - ```firework.js``` This file will use Easel.js to dictate the appearance of the fireworks, and will be responsible for creating firework objects.
   - ```game.js``` This file will import the firework objects, and contains the logic to the fireworks show. This includes timing of fireworks, order in which they will go off, starting a new game, etc.
+  - ```fireworks.html``` Will be responsible for rendering the images to the page via the canvas tag.
 
 
 # Timeline
