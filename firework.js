@@ -81,35 +81,72 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   const stage = new createjs.Stage("demoCanvas");
+  // const fwstage = new createjs.Stage("firework-stage");
   const clickrect = new createjs.Shape();
 
-  
-  // let fw01label = new createjs.Text("Firework 1", "30px Arial", "#F00");
-  // fw01label.x = 0;
-  // fw01label.y = 600;
-  // fw01label.alpha = 0.5;
-  // let fw02label = new createjs.Text("Firework 2", "30px Arial", "#F00");
-  // fw02label.x = 100;
-  // fw02label.y = 600;
-  // fw02label.alpha = 0.5;
-  // let fw03label = new createjs.Text("Firework 3", "30px Arial", "#F00");
-  // fw03label.x = 200;
-  // fw03label.y = 600;
-  // fw03label.alpha = 0.5;
-  // let fw04label = new createjs.Text("Firework 4", "30px Arial", "#F00");
-  // fw04label.x = 300;
-  // fw04label.y = 600;
-  // fw04label.alpha = 0.5;
-  // let fw05label = new createjs.Text("Firework 5", "30px Arial", "#F00");
-  // fw05label.x = 400;
-  // fw05label.y = 600;
-  // fw05label.alpha = 0.5;
-  // let fw06label = new createjs.Text("Firework 6", "30px Arial", "#F00");
-  // fw036label.x = 500;
-  // fw06label.y = 600;
-  // fw06label.alpha = 0.5;
-  // stage.addChild(fw01label, fw02label, fw03label, fw04label, fw05label, fw06label);
-  // stage.update();
+
+  let fw01bit = new createjs.Bitmap("./firework_image/fw01/6.gif");
+  fw01bit.x = 0;
+  fw01bit.y = 600;
+  let hit01 = new createjs.Shape();
+  hit01.graphics.beginFill("#000").drawRect(fw01bit.x, fw01bit.y, 100, 100);
+  hit01.addEventListener("click", handleClickfw01);
+  function handleClickfw01() {
+    images = fw01;
+  }
+
+  let fw02bit = new createjs.Bitmap("./firework_image/fw02/6.gif");
+  fw02bit.x = 100;
+  fw02bit.y = 600;
+  let hit02 = new createjs.Shape();
+  hit02.graphics.beginFill("#000").drawRect(fw02bit.x, fw02bit.y, 100, 100);
+  hit02.addEventListener("click", handleClickfw02);
+  function handleClickfw02() {
+    images = fw02;
+  }
+
+  let fw03bit = new createjs.Bitmap("./firework_image/fw03/6.gif");
+  fw03bit.x = 200;
+  fw03bit.y = 600;
+  let hit03 = new createjs.Shape();
+  hit03.graphics.beginFill("#000").drawRect(fw03bit.x, fw03bit.y, 100, 100);
+  hit03.addEventListener("click", handleClickfw03);
+  function handleClickfw03() {
+    images = fw03;
+  }
+
+  let fw04bit = new createjs.Bitmap("./firework_image/fw04/6.gif");
+  fw04bit.x = 300;
+  fw04bit.y = 600;
+  let hit04 = new createjs.Shape();
+  hit04.graphics.beginFill("#000").drawRect(fw04bit.x, fw04bit.y, 100, 100);
+  hit04.addEventListener("click", handleClickfw04);
+  function handleClickfw04() {
+    images = fw04;
+  }
+
+  let fw05bit = new createjs.Bitmap("./firework_image/fw05/6.gif");
+  fw05bit.x = 400;
+  fw05bit.y = 600;
+  let hit05 = new createjs.Shape();
+  hit05.graphics.beginFill("#000").drawRect(fw05bit.x, fw05bit.y, 100, 100);
+  hit05.addEventListener("click", handleClickfw05);
+  function handleClickfw05() {
+    images = fw05;
+  }
+
+  let fw06bit = new createjs.Bitmap("./firework_image/fw06/6.gif");
+  fw06bit.x = 500;
+  fw06bit.y = 600;
+  let hit06 = new createjs.Shape();
+  hit06.graphics.beginFill("#000").drawRect(fw06bit.x, fw06bit.y, 100, 100);
+  hit06.addEventListener("click", handleClickfw06);
+  function handleClickfw06() {
+    images = fw06;
+  }
+  stage.addChild(fw01bit, fw02bit, fw03bit, fw04bit, fw05bit, fw06bit);
+  stage.addChild(hit01, hit02, hit03, hit04, hit05, hit06);
+  stage.update();
 
 
 
@@ -118,23 +155,25 @@ document.addEventListener('DOMContentLoaded', () => {
   stage.update();
 
   clickrect.addEventListener("click", handleClick);
+
   function handleClick() {
-    if (images.length === 0) {
-      images = fw01;
-    }
+    let imagesdup = images;
+
 
    createjs.Ticker.addEventListener("tick", tick);
+
    function tick() {
-     let bitmap = new createjs.Bitmap(images[0]);
+     let bitmap = new createjs.Bitmap(imagesdup[0]);
      bitmap.x = 100;
      bitmap.y = 100;
      bitmap.width = 200;
      bitmap.height = 200;
      stage.addChild(bitmap);
      stage.update();
-     images = images.slice(1);
-     if (images.length === 0) {
+     imagesdup = imagesdup.slice(1);
+     if (imagesdup.length === 0) {
        stage.removeAllChildren();
+       createjs.Ticker.removeEventListener("tick", tick);
        stage.addChild(clickrect);
        stage.update();
      }
