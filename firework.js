@@ -79,9 +79,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let images = fw01;
 
+
   const stage = new createjs.Stage("demoCanvas");
   const clickrect = new createjs.Shape();
-  clickrect.graphics.beginFill("#000").drawRect(0, 0, 900, 600);
+
+  
+  // let fw01label = new createjs.Text("Firework 1", "30px Arial", "#F00");
+  // fw01label.x = 0;
+  // fw01label.y = 600;
+  // fw01label.alpha = 0.5;
+  // let fw02label = new createjs.Text("Firework 2", "30px Arial", "#F00");
+  // fw02label.x = 100;
+  // fw02label.y = 600;
+  // fw02label.alpha = 0.5;
+  // let fw03label = new createjs.Text("Firework 3", "30px Arial", "#F00");
+  // fw03label.x = 200;
+  // fw03label.y = 600;
+  // fw03label.alpha = 0.5;
+  // let fw04label = new createjs.Text("Firework 4", "30px Arial", "#F00");
+  // fw04label.x = 300;
+  // fw04label.y = 600;
+  // fw04label.alpha = 0.5;
+  // let fw05label = new createjs.Text("Firework 5", "30px Arial", "#F00");
+  // fw05label.x = 400;
+  // fw05label.y = 600;
+  // fw05label.alpha = 0.5;
+  // let fw06label = new createjs.Text("Firework 6", "30px Arial", "#F00");
+  // fw036label.x = 500;
+  // fw06label.y = 600;
+  // fw06label.alpha = 0.5;
+  // stage.addChild(fw01label, fw02label, fw03label, fw04label, fw05label, fw06label);
+  // stage.update();
+
+
+
+  clickrect.graphics.beginFill("#000").drawRect(100, 0, 700, 500);
   stage.addChild(clickrect);
   stage.update();
 
