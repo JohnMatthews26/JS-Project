@@ -4,14 +4,46 @@
     <meta charset="utf-8">
 
     <title>Fireworks Show</title>
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Oxygen" rel="stylesheet">
     <link rel="stylesheet" href="./root.css">
     <script
       src="http://code.createjs.com/easeljs-0.7.0.min.js">
     </script>
     <script src="https://code.createjs.com/tweenjs-0.6.2.min.js"></script>
-    <script src="./firework.js"></script>
+    <script src="./test.js"></script>
   </head>
   <body>
-    <canvas id="demoCanvas" width="900" height="600"></canvas>
+    <div class="MainDiv">
+      <div class="leftSection">
+        <section class="left-header">
+          How To Play
+        </section>
+        <ul class="instructions">
+          <li class="instructions-step">
+            1. To launch a firework please click on the corresponding labels at the bottom of the screen.
+          </li>
+          <li class="instructions-step">
+            2. To begin recording a show, click "Start Recording".
+          </li>
+          <li class="instructions-step">
+            3. To stop recording, click "Stop Recording".
+          </li>
+          <li class="instructions-step">
+            4. After recording a show, you may playback the show by clicking "Watch My Show".
+          </li>
+          <li class="instructions-step">
+             Warning, your previous show will be deleted upon clicking "Start Recording".
+          </li>
+        </ul>
+      </div>
+      <div id="middleSection">
+        <canvas id="headerCanvas" width="700" height="50"></canvas>
+        <canvas id="displayCanvas" width="700" height="500"></canvas>
+        <canvas id="clickFireworks" width="700" height="30"></canvas>
+      </div>
+      <div class="rightSection">
+        <canvas id="recordingCanvas" width="100" height="40"></canvas>
+      </div>
+    </div>
   </body>
 </html>

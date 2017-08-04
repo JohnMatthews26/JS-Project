@@ -1,23 +1,4 @@
-//
-// document.addEventListener('DOMContentLoaded', () => {
-//
-//   const stage = new createjs.Stage("demoCanvas");
-//
-//
-//
-//   let line = new createjs.Shape();
-//   line.graphics.setStrokeStyle(3);
-//   line.graphics.beginStroke("red");
-//   line.graphics.beginFill("red").moveTo(100, 100).lineTo(200, 250);
-//   stage.addChild(line);
-//   stage.update();
-//
-//   let circle = new createjs.Shape();
-//   circle.graphics.beginFill("red").drawCircle(100, 100, 50);
-//   stage.addChild(circle);
-//   stage.update();
-//
-// });
+
 document.addEventListener('DOMContentLoaded', () => {
   let fw01 = ["./firework_image/fw01/0.gif", "./firework_image/fw01/1.gif","./firework_image/fw01/2.gif",
     "./firework_image/fw01/3.gif", "./firework_image/fw01/4.gif", "./firework_image/fw01/5.gif",
@@ -81,13 +62,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   const stage = new createjs.Stage("demoCanvas");
-  // const fwstage = new createjs.Stage("firework-stage");
   const clickrect = new createjs.Shape();
 
 
   let fw01bit = new createjs.Bitmap("./firework_image/fw01/6.gif");
   fw01bit.x = 0;
-  fw01bit.y = 600;
+  fw01bit.y = 500;
   let hit01 = new createjs.Shape();
   hit01.graphics.beginFill("#000").drawRect(fw01bit.x, fw01bit.y, 100, 100);
   hit01.addEventListener("click", handleClickfw01);
@@ -97,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let fw02bit = new createjs.Bitmap("./firework_image/fw02/6.gif");
   fw02bit.x = 100;
-  fw02bit.y = 600;
+  fw02bit.y = 500;
   let hit02 = new createjs.Shape();
   hit02.graphics.beginFill("#000").drawRect(fw02bit.x, fw02bit.y, 100, 100);
   hit02.addEventListener("click", handleClickfw02);
@@ -107,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let fw03bit = new createjs.Bitmap("./firework_image/fw03/6.gif");
   fw03bit.x = 200;
-  fw03bit.y = 600;
+  fw03bit.y = 500;
   let hit03 = new createjs.Shape();
   hit03.graphics.beginFill("#000").drawRect(fw03bit.x, fw03bit.y, 100, 100);
   hit03.addEventListener("click", handleClickfw03);
@@ -117,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let fw04bit = new createjs.Bitmap("./firework_image/fw04/6.gif");
   fw04bit.x = 300;
-  fw04bit.y = 600;
+  fw04bit.y = 500;
   let hit04 = new createjs.Shape();
   hit04.graphics.beginFill("#000").drawRect(fw04bit.x, fw04bit.y, 100, 100);
   hit04.addEventListener("click", handleClickfw04);
@@ -127,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let fw05bit = new createjs.Bitmap("./firework_image/fw05/6.gif");
   fw05bit.x = 400;
-  fw05bit.y = 600;
+  fw05bit.y = 500;
   let hit05 = new createjs.Shape();
   hit05.graphics.beginFill("#000").drawRect(fw05bit.x, fw05bit.y, 100, 100);
   hit05.addEventListener("click", handleClickfw05);
@@ -137,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let fw06bit = new createjs.Bitmap("./firework_image/fw06/6.gif");
   fw06bit.x = 500;
-  fw06bit.y = 600;
+  fw06bit.y = 500;
   let hit06 = new createjs.Shape();
   hit06.graphics.beginFill("#000").drawRect(fw06bit.x, fw06bit.y, 100, 100);
   hit06.addEventListener("click", handleClickfw06);
@@ -175,6 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
        stage.removeAllChildren();
        createjs.Ticker.removeEventListener("tick", tick);
        stage.addChild(clickrect);
+      //  stage.addChild(fw01bit, fw02bit, fw03bit, fw04bit, fw05bit, fw06bit);
        stage.update();
      }
     }

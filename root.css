@@ -7,3 +7,57 @@ body {
 canvas {
 	border: solid 1px rgba(0,0,0,0.05);
 }
+
+div#middleSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 5;
+}
+.MainDiv {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.MainDiv {}
+
+.leftSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-family: oxygen;
+    font-size: 13px;
+    width: 100%;
+    height: 100%;
+}
+
+ul.instructions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+li.instructions-step {
+    margin-bottom: 15px;
+}
+
+ul.instructions {
+}
+
+section.left-header {
+    font-size: large;
+}
+
+.rightSection {
+    display: flex;
+    flex: 1;
+}
+
+font-family: 'Oxygen', sans-serif;
