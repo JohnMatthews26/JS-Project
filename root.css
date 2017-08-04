@@ -41,11 +41,12 @@ ul.instructions {
     flex-direction: column;
     justify-content: space-between;
     list-style: none;
-    align-items: center;
+    align-items: flex-start;
 }
 
 li.instructions-step {
     margin-bottom: 15px;
+    color: white;
 }
 
 ul.instructions {
@@ -53,11 +54,18 @@ ul.instructions {
 
 section.left-header {
     font-size: large;
+    color: white;
 }
 
 .rightSection {
     display: flex;
     flex: 1;
+}
+
+html {
+    width: 100%;
+    background-color: black;
+    height: 100vh;
 }
 
 font-family: 'Oxygen', sans-serif;

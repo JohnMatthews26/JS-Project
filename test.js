@@ -97,14 +97,17 @@ document.addEventListener('DOMContentLoaded', () => {
   let showTime = "";
   let startTime = "";
   let endTime = "";
-  let recordingLabel = new createjs.Text("Start Recording", "12px Arial", "#00F");
+  let recordingLabel = new createjs.Text("Start Recording", "14px Arial", "green");
 
   function playShow(){
 
     if (showArr.empty) {
       return;
-    } else if ((Date.now() - showTime) - showArr[0].time <= 1000) {
+    } else if ((Date.now() - showTime) - showArr[0].time <= 1000 || (Date.now() - showTime) - showArr[0].time >= -1000) {
+
         createjs.Ticker.addEventListener("tick", showTick);
+    } else {
+      playShow();
     }
 
     let imagesdup = showArr[0].images;
@@ -156,20 +159,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function textOutput() {
     if (startTime === "") {
-      recordingLabel = new createjs.Text("Start Recording", "12px Arial", "#00F");
+      recordingLabel = new createjs.Text("Start Recording", "14px Arial", "green");
       recordingCanvas.removeAllChildren();
       recordingCanvas.addChild(recordingLabel);
       recordingLabel.addEventListener("click", recordingClick);
       recordingCanvas.update();
 
     } else if (endTime === ""){
-      recordingLabel = new createjs.Text("Stop Recording", "12px Arial", "#00F");
+      recordingLabel = new createjs.Text("Stop Recording", "14px Arial", "red");
       recordingCanvas.removeAllChildren();
       recordingCanvas.addChild(recordingLabel);
       recordingLabel.addEventListener("click", recordingClick);
       recordingCanvas.update();
     } else {
-      recordingLabel = new createjs.Text("Play my Show", "12px Arial", "#00F");
+      recordingLabel = new createjs.Text("Play my Show", "14px Arial", "blue");
       recordingCanvas.removeAllChildren();
       recordingCanvas.addChild(recordingLabel);
       recordingLabel.addEventListener("click", recordingClick);
@@ -202,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   let hit01 = new createjs.Shape();
-  let label01 = new createjs.Text("Firework 1", "18px Arial", "#00F");
+  let label01 = new createjs.Text("Waterfall", "18px Arial", "#FFF");
   hit01.graphics.beginFill("#FFF").drawRect(0, 0, label01.getMeasuredWidth(), label01.getMeasuredHeight());
   label01.x = 0;
   label01.y = 0;
@@ -254,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   let hit02 = new createjs.Shape();
-  let label02 = new createjs.Text("Firework 2", "18px Arial", "#00F");
+  let label02 = new createjs.Text("POP!", "18px Arial", "#FFF");
   hit02.graphics.beginFill("#FFF").drawRect(0, 0, label02.getMeasuredWidth(), label02.getMeasuredHeight());
   label02.x = 100;
   label02.y = 0;
@@ -304,7 +307,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   let hit03 = new createjs.Shape();
-  let label03 = new createjs.Text("Firework 3", "18px Arial", "#00F");
+  let label03 = new createjs.Text("Fireball", "18px Arial", "#FFF");
   hit03.graphics.beginFill("#FFF").drawRect(0, 0, label03.getMeasuredWidth(), label03.getMeasuredHeight());
   label03.x = 200;
   label03.y = 0;
@@ -353,7 +356,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   let hit04 = new createjs.Shape();
-  let label04 = new createjs.Text("Firework 4", "18px Arial", "#00F");
+  let label04 = new createjs.Text("Burst", "18px Arial", "#FFF");
   hit04.graphics.beginFill("#FFF").drawRect(0, 0, label04.getMeasuredWidth(), label04.getMeasuredHeight());
   label04.x = 300;
   label04.y = 0;
@@ -402,7 +405,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   let hit09 = new createjs.Shape();
-  let label09 = new createjs.Text("Firework 5", "18px Arial", "#00F");
+  let label09 = new createjs.Text("Ruby Sky", "18px Arial", "#FFF");
   hit09.graphics.beginFill("#FFF").drawRect(0, 0, label09.getMeasuredWidth(), label09.getMeasuredHeight());
   label09.x = 400;
   label09.y = 0;
@@ -453,9 +456,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   let hit08 = new createjs.Shape();
-  let label08 = new createjs.Text("Firework 6", "18px Arial", "#00F");
+  let label08 = new createjs.Text("BANG!", "18px Arial", "#FFF");
   hit08.graphics.beginFill("#FFF").drawRect(0, 0, label08.getMeasuredWidth(), label08.getMeasuredHeight());
-  label08.x = 500;
+  label08.x = 520;
   label08.y = 0;
 
   label08.hitArea = hit08;
@@ -504,9 +507,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   let hit11 = new createjs.Shape();
-  let label11 = new createjs.Text("Firework 7", "18px Arial", "#00F");
+  let label11 = new createjs.Text("Nebula", "18px Arial", "#FFF");
   hit11.graphics.beginFill("#FFF").drawRect(0, 0, label11.getMeasuredWidth(), label11.getMeasuredHeight());
-  label11.x = 600;
+  label11.x = 615;
   label11.y = 0;
   label11.hitArea = hit11;
 
