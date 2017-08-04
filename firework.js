@@ -436,7 +436,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function tick09() {
       let bitmap09 = new createjs.Bitmap(imagesdup[0]);
-      bitmap09.x = 400;
+      bitmap09.x = x;
       bitmap09.y = y;
       bitmap09.width = 200;
       bitmap09.height = 200;
