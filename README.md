@@ -1,27 +1,26 @@
-# 2d Fireworks show
+# Fireworks show
 
 ## Background
 
-2d Fireworks Show is a one player game in which the player can create their own fireworks show. The game will have two phases, the first phase consists of the player designing their fireworks show, and in the second phase the player gets to watch their fireworks show.
+Fireworks Show is a one player game in which the player can create their own fireworks show. The game will have two phases, the first phase consists of the player designing their fireworks show, and in the second phase the player gets to watch their fireworks show.
 
-In the first phase, the user will first select a type of firework, which will affect the pattern the firework displays upon exploding. The user can then select a color scheme for the firework and decide on the height at which it will go off. After the user is finished making their fireworks, they may choose the order at which the fireworks will go off.
+The user may test each firework out by clicking on the firework labels. The user may then record a fireworks show, and afterwards playback the show they created.
 
 
 ## Functionality & MVPs
 
 The user has the ability to do the following:
 
--  Start, reset, and edit a game
+-  Start, reset a show
 -  Select a type of firework
 -  Decide when each firework will go off
--  Select the height of each firework
--  Color scheme of each firework
--  See fireworks go off
+-  Record the fireworks
+-  See the fireworks go off
 
 This project also includes:
 
 -  A production Readme
--  A modal that describes how to play
+-  A side panel that describes how to play
 
 
 ## Wireframes
@@ -34,13 +33,12 @@ This app is a single page app with a game screen, How To Play button that opens 
   My initial plan for technologies is the following:
   -  Vanilla JS and jquery for the logic of the fireworks
   -  Easel.js and HTML5 Canvas for display. Easel.js will be used to create the firework objects and works well with HTML5 Canvas to easily move objects on the canvas by altering the x and y coordinates.
-  -  Webpack
 
   I plan on having the following files in my project:
 
   - ```firework.js``` This file will use Easel.js to dictate the appearance of the fireworks, and will be responsible for creating firework objects.
   - ```game.js``` This file will import the firework objects, and contains the logic to the fireworks show. This includes timing of fireworks, order in which they will go off, starting a new game, etc.
-  - ```fireworks.html``` Will be responsible for rendering the images to the page via the canvas tag.
+  - ```index.html``` Will be responsible for rendering the images to the page via the canvas tag.
 
 
 # Timeline
