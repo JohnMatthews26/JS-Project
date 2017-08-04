@@ -2,7 +2,7 @@
 
 ## Background
 
-Fireworks Show is a one player game in which the player can create their own fireworks show. The game will have two phases, the first phase consists of the player designing their fireworks show, and in the second phase the player gets to watch their fireworks show.
+Fireworks Show is a one player game in which the player can create their own fireworks show. The game has two phases, the first phase consists of the player designing their fireworks show, and in the second phase the player gets to watch their fireworks show.
 
 The user may test each firework out by clicking on the firework labels. The user may then record a fireworks show, and afterwards playback the show they created.
 
@@ -30,7 +30,7 @@ This app is a single page app with a game screen, How To Play button that opens 
 ![alt text](http://res.cloudinary.com/roscoe/image/upload/v1501444952/soccer_wireframe_kcp129.png)
 
 ## Technologies
-  My initial plan for technologies is the following:
+  The following technologies are used:
   -  Vanilla JS and jquery for the logic of the fireworks
   -  Easel.js and HTML5 Canvas for display. Easel.js will be used to create the firework objects and works well with HTML5 Canvas to easily move objects on the canvas by altering the x and y coordinates.
 
