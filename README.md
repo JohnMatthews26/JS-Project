@@ -2,6 +2,7 @@
 
 ## Background
 
+
 Fireworks Show is a one player game in which the player can create their own fireworks show. The game has two phases, the first phase consists of the player designing their fireworks show, and in the second phase the player gets to watch their fireworks show.
 
 The user may test each firework out by clicking on the firework labels. The user may then record a fireworks show, and afterwards playback the show they created.
