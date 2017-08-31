@@ -78,7 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
         "./firework_image/fw11/33.gif"];
 
 
-
   const headerStage = new createjs.Stage("headerCanvas");
   const headerBackground = new createjs.Shape();
   headerBackground.graphics.beginFill("#000").drawRect(0, 0, 700, 50);
@@ -98,6 +97,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let startTime = "";
   let endTime = "";
   let recordingLabel = new createjs.Text("Start Recording", "26px Arial", "green");
+
+
 
   function playShow(){
 
@@ -161,6 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (startTime === "") {
       recordingLabel = new createjs.Text("Start Recording", "26px Arial", "green");
       recordingCanvas.removeAllChildren();
+
       recordingCanvas.addChild(recordingLabel);
       recordingLabel.addEventListener("click", recordingClick);
       recordingCanvas.update();
@@ -168,12 +170,14 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (endTime === ""){
       recordingLabel = new createjs.Text("Stop Recording", "26px Arial", "red");
       recordingCanvas.removeAllChildren();
+
       recordingCanvas.addChild(recordingLabel);
       recordingLabel.addEventListener("click", recordingClick);
       recordingCanvas.update();
     } else {
       recordingLabel = new createjs.Text("Play my Show", "26px Arial", "blue");
       recordingCanvas.removeAllChildren();
+
       recordingCanvas.addChild(recordingLabel);
       recordingLabel.addEventListener("click", recordingClick);
       recordingCanvas.update();
@@ -184,10 +188,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
   recordingLabel.x = 0;
   recordingLabel.y = 0;
 
   recordingLabel.addEventListener("click", recordingClick);
+
   recordingCanvas.addChild(recordingLabel);
   recordingCanvas.update();
 

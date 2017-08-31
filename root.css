@@ -46,6 +46,7 @@ ul.instructions {
 
 li.instructions-step {
     margin-bottom: 15px;
+    font-size: initial;
     color: white;
 }
 
@@ -53,7 +54,7 @@ ul.instructions {
 }
 
 section.left-header {
-    font-size: large;
+    font-size: x-large;
     color: white;
 }
 
