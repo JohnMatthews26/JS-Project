@@ -73,4 +73,4 @@ export const fw01 = ["./firework_image/fw01/0.gif", "./firework_image/fw01/1.gif
       "./firework_image/fw11/24.gif", "./firework_image/fw11/25.gif", "./firework_image/fw11/26.gif",
       "./firework_image/fw11/27.gif", "./firework_image/fw11/28.gif", "./firework_image/fw11/29.gif",
       "./firework_image/fw11/30.gif", "./firework_image/fw11/31.gif", "./firework_image/fw11/32.gif",
-      "./firework_image/fw11/33.gif"]
+      "./firework_image/fw11/33.gif"];

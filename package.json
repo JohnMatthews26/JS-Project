@@ -1,0 +1,24 @@
+{
+  "name": "JS-Project",
+  "version": "1.0.0",
+  "description": "## Background",
+  "main": "firework.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnMatthews26/JS-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnMatthews26/JS-Project/issues"
+  },
+  "homepage": "https://github.com/JohnMatthews26/JS-Project#readme",
+  "dependencies": {
+    "createjs-easeljs": "^0.8.2",
+    "webpack": "^3.5.6"
+  }
+}
