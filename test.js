@@ -29,6 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   function playShow(){
+    console.log(showArr);
+    if (showArr[0].images === ""){
+      showArr = showArr.slice(1);
+    }
 
     if (showArr.empty) {
       return;
@@ -37,21 +41,61 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       playShow();
     }
-    let imagesdup = showArr[0].images;
-    let x = showArr[0].xcoord;
-    let y = showArr[0].ycoord;
+    let imagesdup1 = showArr[0].images;
+    let x1 = showArr[0].xcoord;
+    let y1 = showArr[0].ycoord;
+    let imagesdup2 = showArr[1].images;
+    let x2 = showArr[1].xcoord;
+    let y2 = showArr[1].ycoord;
+    let imagesdup3 = showArr[2].images;
+    let x3 = showArr[2].xcoord;
+    let y3 = showArr[2].ycoord;
+    let imagesdup4 = showArr[3].images;
+    let x4 = showArr[3].xcoord;
+    let y4 = showArr[3].ycoord;
+    let imagesdup5 = showArr[4].images;
+    let x5 = showArr[4].xcoord;
+    let y5 = showArr[4].ycoord;
 
     function showTick() {
-      let bitmapImage = new createjs.Bitmap(imagesdup[0]);
-      bitmapImage.x = x;
-      bitmapImage.y = y;
-      bitmapImage.width = 200;
-      bitmapImage.height = 200;
-      stage.addChild(bitmapImage);
+      let bitmapImage1 = new createjs.Bitmap(imagesdup1[0]);
+      bitmapImage1.x = x1;
+      bitmapImage1.y = y1;
+      bitmapImage1.width = 200;
+      bitmapImage1.height = 200;
+      stage.addChild(bitmapImage1);
+      let bitmapImage2 = new createjs.Bitmap(imagesdup2[0]);
+      bitmapImage2.x = x2;
+      bitmapImage2.y = y2;
+      bitmapImage2.width = 200;
+      bitmapImage2.height = 200;
+      stage.addChild(bitmapImage2);
+      let bitmapImage3 = new createjs.Bitmap(imagesdup3[0]);
+      bitmapImage3.x = x3;
+      bitmapImage3.y = y3;
+      bitmapImage3.width = 200;
+      bitmapImage3.height = 200;
+      let bitmapImage4 = new createjs.Bitmap(imagesdup4[0]);
+      bitmapImage4.x = x4;
+      bitmapImage4.y = y4;
+      bitmapImage4.width = 200;
+      bitmapImage4.height = 200;
+      stage.addChild(bitmapImage3);
+      stage.addChild(bitmapImage4);
+      let bitmapImage5 = new createjs.Bitmap(imagesdup5[0]);
+      bitmapImage5.x = x5;
+      bitmapImage5.y = y5;
+      bitmapImage5.width = 200;
+      bitmapImage5.height = 200;
+      stage.addChild(bitmapImage5);
       stage.update();
-      showArr = showArr.slice(1);
-      imagesdup = imagesdup.slice(1);
-      if (imagesdup.length === 0) {
+      showArr = showArr.slice(5);
+      imagesdup1 = imagesdup1.slice(1);
+      imagesdup2 = imagesdup2.slice(1);
+      imagesdup3 = imagesdup3.slice(1);
+      imagesdup4 = imagesdup4.slice(1);
+      imagesdup5 = imagesdup5.slice(1);
+      if (imagesdup1.length === 0) {
         stage.removeAllChildren();
         createjs.Ticker.removeEventListener("tick", showTick);
         stage.addChild(rectBackground);
