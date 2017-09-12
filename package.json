@@ -2,7 +2,7 @@
   "name": "JS-Project",
   "version": "1.0.0",
   "description": "## Background",
-  "main": "firework.js",
+  "main": "test.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
