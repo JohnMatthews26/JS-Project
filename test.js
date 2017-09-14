@@ -217,6 +217,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let imagesdup5 = fw01;
     let x1 = Math.random() * 600;
     let y1 = Math.random() * 400;
+    let x2 = Math.random() * 600;
+    let y2 = Math.random() * 400;
+    let x3 = Math.random() * 600;
+    let y3 = Math.random() * 400;
+    let x4 = Math.random() * 600;
+    let y4 = Math.random() * 400;
+    let x5 = Math.random() * 600;
+    let y5 = Math.random() * 400;
     if (startTime !== "") {
       showArr.push({
         time: (Date.now() - startTime),
@@ -226,26 +234,26 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       {
         time: (Date.now() - startTime),
-        xcoord: x1 * .9,
-        ycoord: y1 * .9,
+        xcoord: x2,
+        ycoord: y2,
         images: imagesdup2
       },
       {
         time: (Date.now() - startTime),
-        xcoord: x1 * .8,
-        ycoord: y1 * .8,
+        xcoord: x3,
+        ycoord: y3,
         images: imagesdup3
       },
       {
         time: (Date.now() - startTime),
-        xcoord: x1 * .7,
-        ycoord: y1 * .7,
+        xcoord: x4,
+        ycoord: y4,
         images: imagesdup4
       },
       {
         time: (Date.now() - startTime),
-        xcoord: x1 * .6,
-        ycoord: y1 * .6,
+        xcoord: x5,
+        ycoord: y5,
         images: imagesdup5
       });
     }
@@ -263,20 +271,20 @@ document.addEventListener('DOMContentLoaded', () => {
       bitmap01.y = y1;
       bitmap01.width = 200;
       bitmap01.height = 200;
-      bitmap02.x = x1 * .9;
-      bitmap02.y = y1 * .9;
+      bitmap02.x = x2;
+      bitmap02.y = y2;
       bitmap02.width = 200;
       bitmap02.height = 200;
-      bitmap03.x = x1 * .8;
-      bitmap03.y = y1 * .8;
+      bitmap03.x = x3;
+      bitmap03.y = y3;
       bitmap03.width = 200;
       bitmap03.height = 200;
-      bitmap04.x = x1 * .7;
-      bitmap04.y = y1 * .7;
+      bitmap04.x = x4;
+      bitmap04.y = y4;
       bitmap04.width = 200;
       bitmap04.height = 200;
-      bitmap05.x = x1 * .6;
-      bitmap05.y = y1 * .6;
+      bitmap05.x = x5;
+      bitmap05.y = y5;
       bitmap05.width = 200;
       bitmap05.height = 200;
       stage.addChild(bitmap01);
@@ -323,6 +331,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let imagesdup5 = fw02;
     let x1 = Math.random() * 600;
     let y1 = Math.random() * 400;
+    let x2 = Math.random() * 600;
+    let y2 = Math.random() * 400;
+    let x3 = Math.random() * 600;
+    let y3 = Math.random() * 400;
+    let x4 = Math.random() * 600;
+    let y4 = Math.random() * 400;
+    let x5 = Math.random() * 600;
+    let y5 = Math.random() * 400;
     if (startTime !== "") {
       showArr.push({
         time: (Date.now() - startTime),
@@ -332,26 +348,26 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       {
         time: (Date.now() - startTime),
-        xcoord: x1 * .9,
-        ycoord: y1 * .9,
+        xcoord: x2,
+        ycoord: y2,
         images: imagesdup2
       },
       {
         time: (Date.now() - startTime),
-        xcoord: x1 * .8,
-        ycoord: y1 * .8,
+        xcoord: x3,
+        ycoord: y3,
         images: imagesdup3
       },
       {
         time: (Date.now() - startTime),
-        xcoord: x1 * .7,
-        ycoord: y1 * .7,
+        xcoord: x4,
+        ycoord: y4,
         images: imagesdup4
       },
       {
         time: (Date.now() - startTime),
-        xcoord: x1 * .6,
-        ycoord: y1 * .6,
+        xcoord: x5,
+        ycoord: y5,
         images: imagesdup5
       });
     }
@@ -369,20 +385,20 @@ document.addEventListener('DOMContentLoaded', () => {
       bitmap01.y = y1;
       bitmap01.width = 200;
       bitmap01.height = 200;
-      bitmap02.x = x1 * .9;
-      bitmap02.y = y1 * .9;
+      bitmap02.x = x2;
+      bitmap02.y = y2;
       bitmap02.width = 200;
       bitmap02.height = 200;
-      bitmap03.x = x1 * .8;
-      bitmap03.y = y1 * .8;
+      bitmap03.x = x3;
+      bitmap03.y = y3;
       bitmap03.width = 200;
       bitmap03.height = 200;
-      bitmap04.x = x1 * .7;
-      bitmap04.y = y1 * .7;
+      bitmap04.x = x4;
+      bitmap04.y = y4;
       bitmap04.width = 200;
       bitmap04.height = 200;
-      bitmap05.x = x1 * .6;
-      bitmap05.y = y1 * .6;
+      bitmap05.x = x5;
+      bitmap05.y = y5;
       bitmap05.width = 200;
       bitmap05.height = 200;
       stage.addChild(bitmap01);
@@ -428,6 +444,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let imagesdup5 = fw03;
     let x1 = Math.random() * 600;
     let y1 = Math.random() * 400;
+    let x2 = Math.random() * 600;
+    let y2 = Math.random() * 400;
+    let x3 = Math.random() * 600;
+    let y3 = Math.random() * 400;
+    let x4 = Math.random() * 600;
+    let y4 = Math.random() * 400;
+    let x5 = Math.random() * 600;
+    let y5 = Math.random() * 400;
     if (startTime !== "") {
       showArr.push({
         time: (Date.now() - startTime),
@@ -437,26 +461,26 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       {
         time: (Date.now() - startTime),
-        xcoord: x1 * .9,
-        ycoord: y1 * .9,
+        xcoord: x2,
+        ycoord: y2,
         images: imagesdup2
       },
       {
         time: (Date.now() - startTime),
-        xcoord: x1 * .8,
-        ycoord: y1 * .8,
+        xcoord: x3,
+        ycoord: y3,
         images: imagesdup3
       },
       {
         time: (Date.now() - startTime),
-        xcoord: x1 * .7,
-        ycoord: y1 * .7,
+        xcoord: x4,
+        ycoord: y4,
         images: imagesdup4
       },
       {
         time: (Date.now() - startTime),
-        xcoord: x1 * .6,
-        ycoord: y1 * .6,
+        xcoord: x5,
+        ycoord: y5,
         images: imagesdup5
       });
     }
@@ -474,20 +498,20 @@ document.addEventListener('DOMContentLoaded', () => {
       bitmap01.y = y1;
       bitmap01.width = 200;
       bitmap01.height = 200;
-      bitmap02.x = x1 * .9;
-      bitmap02.y = y1 * .9;
+      bitmap02.x = x2;
+      bitmap02.y = y2;
       bitmap02.width = 200;
       bitmap02.height = 200;
-      bitmap03.x = x1 * .8;
-      bitmap03.y = y1 * .8;
+      bitmap03.x = x3;
+      bitmap03.y = y3;
       bitmap03.width = 200;
       bitmap03.height = 200;
-      bitmap04.x = x1 * .7;
-      bitmap04.y = y1 * .7;
+      bitmap04.x = x4;
+      bitmap04.y = y4;
       bitmap04.width = 200;
       bitmap04.height = 200;
-      bitmap05.x = x1 * .6;
-      bitmap05.y = y1 * .6;
+      bitmap05.x = x5;
+      bitmap05.y = y5;
       bitmap05.width = 200;
       bitmap05.height = 200;
       stage.addChild(bitmap01);
@@ -533,6 +557,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let imagesdup5 = fw04;
     let x1 = Math.random() * 600;
     let y1 = Math.random() * 400;
+    let x2 = Math.random() * 600;
+    let y2 = Math.random() * 400;
+    let x3 = Math.random() * 600;
+    let y3 = Math.random() * 400;
+    let x4 = Math.random() * 600;
+    let y4 = Math.random() * 400;
+    let x5 = Math.random() * 600;
+    let y5 = Math.random() * 400;
     if (startTime !== "") {
       showArr.push({
         time: (Date.now() - startTime),
@@ -542,26 +574,26 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       {
         time: (Date.now() - startTime),
-        xcoord: x1 * .9,
-        ycoord: y1 * .9,
+        xcoord: x2,
+        ycoord: y2,
         images: imagesdup2
       },
       {
         time: (Date.now() - startTime),
-        xcoord: x1 * .8,
-        ycoord: y1 * .8,
+        xcoord: x3,
+        ycoord: y3,
         images: imagesdup3
       },
       {
         time: (Date.now() - startTime),
-        xcoord: x1 * .7,
-        ycoord: y1 * .7,
+        xcoord: x4,
+        ycoord: y4,
         images: imagesdup4
       },
       {
         time: (Date.now() - startTime),
-        xcoord: x1 * .6,
-        ycoord: y1 * .6,
+        xcoord: x5,
+        ycoord: y5,
         images: imagesdup5
       });
     }
@@ -579,20 +611,20 @@ document.addEventListener('DOMContentLoaded', () => {
       bitmap01.y = y1;
       bitmap01.width = 200;
       bitmap01.height = 200;
-      bitmap02.x = x1 * .9;
-      bitmap02.y = y1 * .9;
+      bitmap02.x = x2;
+      bitmap02.y = y2;
       bitmap02.width = 200;
       bitmap02.height = 200;
-      bitmap03.x = x1 * .8;
-      bitmap03.y = y1 * .8;
+      bitmap03.x = x3;
+      bitmap03.y = y3;
       bitmap03.width = 200;
       bitmap03.height = 200;
-      bitmap04.x = x1 * .7;
-      bitmap04.y = y1 * .7;
+      bitmap04.x = x4;
+      bitmap04.y = y4;
       bitmap04.width = 200;
       bitmap04.height = 200;
-      bitmap05.x = x1 * .6;
-      bitmap05.y = y1 * .6;
+      bitmap05.x = x5;
+      bitmap05.y = y5;
       bitmap05.width = 200;
       bitmap05.height = 200;
       stage.addChild(bitmap01);
@@ -638,6 +670,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let imagesdup5 = fw09;
     let x1 = Math.random() * 600;
     let y1 = Math.random() * 400;
+    let x2 = Math.random() * 600;
+    let y2 = Math.random() * 400;
+    let x3 = Math.random() * 600;
+    let y3 = Math.random() * 400;
+    let x4 = Math.random() * 600;
+    let y4 = Math.random() * 400;
+    let x5 = Math.random() * 600;
+    let y5 = Math.random() * 400;
     if (startTime !== "") {
       showArr.push({
         time: (Date.now() - startTime),
@@ -647,26 +687,26 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       {
         time: (Date.now() - startTime),
-        xcoord: x1 * .9,
-        ycoord: y1 * .9,
+        xcoord: x2,
+        ycoord: y2,
         images: imagesdup2
       },
       {
         time: (Date.now() - startTime),
-        xcoord: x1 * .8,
-        ycoord: y1 * .8,
+        xcoord: x3,
+        ycoord: y3,
         images: imagesdup3
       },
       {
         time: (Date.now() - startTime),
-        xcoord: x1 * .7,
-        ycoord: y1 * .7,
+        xcoord: x4,
+        ycoord: y4,
         images: imagesdup4
       },
       {
         time: (Date.now() - startTime),
-        xcoord: x1 * .6,
-        ycoord: y1 * .6,
+        xcoord: x5,
+        ycoord: y5,
         images: imagesdup5
       });
     }
@@ -684,20 +724,20 @@ document.addEventListener('DOMContentLoaded', () => {
       bitmap01.y = y1;
       bitmap01.width = 200;
       bitmap01.height = 200;
-      bitmap02.x = x1 * .9;
-      bitmap02.y = y1 * .9;
+      bitmap02.x = x2;
+      bitmap02.y = y2;
       bitmap02.width = 200;
       bitmap02.height = 200;
-      bitmap03.x = x1 * .8;
-      bitmap03.y = y1 * .8;
+      bitmap03.x = x3;
+      bitmap03.y = y3;
       bitmap03.width = 200;
       bitmap03.height = 200;
-      bitmap04.x = x1 * .7;
-      bitmap04.y = y1 * .7;
+      bitmap04.x = x4;
+      bitmap04.y = y4;
       bitmap04.width = 200;
       bitmap04.height = 200;
-      bitmap05.x = x1 * .6;
-      bitmap05.y = y1 * .6;
+      bitmap05.x = x5;
+      bitmap05.y = y5;
       bitmap05.width = 200;
       bitmap05.height = 200;
       stage.addChild(bitmap01);
@@ -746,6 +786,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let imagesdup5 = fw08;
     let x1 = Math.random() * 600;
     let y1 = Math.random() * 400;
+    let x2 = Math.random() * 600;
+    let y2 = Math.random() * 400;
+    let x3 = Math.random() * 600;
+    let y3 = Math.random() * 400;
+    let x4 = Math.random() * 600;
+    let y4 = Math.random() * 400;
+    let x5 = Math.random() * 600;
+    let y5 = Math.random() * 400;
     if (startTime !== "") {
       showArr.push({
         time: (Date.now() - startTime),
@@ -755,26 +803,26 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       {
         time: (Date.now() - startTime),
-        xcoord: x1 * .9,
-        ycoord: y1 * .9,
+        xcoord: x2,
+        ycoord: y2,
         images: imagesdup2
       },
       {
         time: (Date.now() - startTime),
-        xcoord: x1 * .8,
-        ycoord: y1 * .8,
+        xcoord: x3,
+        ycoord: y3,
         images: imagesdup3
       },
       {
         time: (Date.now() - startTime),
-        xcoord: x1 * .7,
-        ycoord: y1 * .7,
+        xcoord: x4,
+        ycoord: y4,
         images: imagesdup4
       },
       {
         time: (Date.now() - startTime),
-        xcoord: x1 * .6,
-        ycoord: y1 * .6,
+        xcoord: x5,
+        ycoord: y5,
         images: imagesdup5
       });
     }
@@ -792,20 +840,20 @@ document.addEventListener('DOMContentLoaded', () => {
       bitmap01.y = y1;
       bitmap01.width = 200;
       bitmap01.height = 200;
-      bitmap02.x = x1 * .9;
-      bitmap02.y = y1 * .9;
+      bitmap02.x = x2;
+      bitmap02.y = y2;
       bitmap02.width = 200;
       bitmap02.height = 200;
-      bitmap03.x = x1 * .8;
-      bitmap03.y = y1 * .8;
+      bitmap03.x = x3;
+      bitmap03.y = y3;
       bitmap03.width = 200;
       bitmap03.height = 200;
-      bitmap04.x = x1 * .7;
-      bitmap04.y = y1 * .7;
+      bitmap04.x = x4;
+      bitmap04.y = y4;
       bitmap04.width = 200;
       bitmap04.height = 200;
-      bitmap05.x = x1 * .6;
-      bitmap05.y = y1 * .6;
+      bitmap05.x = x5;
+      bitmap05.y = y5;
       bitmap05.width = 200;
       bitmap05.height = 200;
       stage.addChild(bitmap01);
@@ -852,6 +900,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let imagesdup5 = fw11;
     let x1 = Math.random() * 600;
     let y1 = Math.random() * 400;
+    let x2 = Math.random() * 600;
+    let y2 = Math.random() * 400;
+    let x3 = Math.random() * 600;
+    let y3 = Math.random() * 400;
+    let x4 = Math.random() * 600;
+    let y4 = Math.random() * 400;
+    let x5 = Math.random() * 600;
+    let y5 = Math.random() * 400;
     if (startTime !== "") {
       showArr.push({
         time: (Date.now() - startTime),
@@ -861,26 +917,26 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       {
         time: (Date.now() - startTime),
-        xcoord: x1 * .9,
-        ycoord: y1 * .9,
+        xcoord: x2,
+        ycoord: y2,
         images: imagesdup2
       },
       {
         time: (Date.now() - startTime),
-        xcoord: x1 * .8,
-        ycoord: y1 * .8,
+        xcoord: x3,
+        ycoord: y3,
         images: imagesdup3
       },
       {
         time: (Date.now() - startTime),
-        xcoord: x1 * .7,
-        ycoord: y1 * .7,
+        xcoord: x4,
+        ycoord: y4,
         images: imagesdup4
       },
       {
         time: (Date.now() - startTime),
-        xcoord: x1 * .6,
-        ycoord: y1 * .6,
+        xcoord: x5,
+        ycoord: y5,
         images: imagesdup5
       });
     }
@@ -898,20 +954,20 @@ document.addEventListener('DOMContentLoaded', () => {
       bitmap01.y = y1;
       bitmap01.width = 200;
       bitmap01.height = 200;
-      bitmap02.x = x1 * .9;
-      bitmap02.y = y1 * .9;
+      bitmap02.x = x2;
+      bitmap02.y = y2;
       bitmap02.width = 200;
       bitmap02.height = 200;
-      bitmap03.x = x1 * .8;
-      bitmap03.y = y1 * .8;
+      bitmap03.x = x3;
+      bitmap03.y = y3;
       bitmap03.width = 200;
       bitmap03.height = 200;
-      bitmap04.x = x1 * .7;
-      bitmap04.y = y1 * .7;
+      bitmap04.x = x4;
+      bitmap04.y = y4;
       bitmap04.width = 200;
       bitmap04.height = 200;
-      bitmap05.x = x1 * .6;
-      bitmap05.y = y1 * .6;
+      bitmap05.x = x5;
+      bitmap05.y = y5;
       bitmap05.width = 200;
       bitmap05.height = 200;
       stage.addChild(bitmap01);
