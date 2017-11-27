@@ -12,8 +12,9 @@ div#middleSection {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex: 5;
+    margin-left: 100px;
 }
 .MainDiv {
     align-items: center;
