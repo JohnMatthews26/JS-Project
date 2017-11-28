@@ -1,92 +1,12 @@
+import { fw01, fw02, fw03, fw04, fw08, fw09, fw11 } from './images';
 
 document.addEventListener('DOMContentLoaded', () => {
-  let fw01 = ["./firework_image/fw01/0.gif", "./firework_image/fw01/1.gif","./firework_image/fw01/2.gif",
-    "./firework_image/fw01/3.gif", "./firework_image/fw01/4.gif", "./firework_image/fw01/5.gif",
-    "./firework_image/fw01/6.gif", "./firework_image/fw01/7.gif", "./firework_image/fw01/8.gif",
-    "./firework_image/fw01/9.gif", "./firework_image/fw01/10.gif","./firework_image/fw01/11.gif",
-    "./firework_image/fw01/12.gif", "./firework_image/fw01/13.gif", "./firework_image/fw01/14.gif",
-    "./firework_image/fw01/15.gif", "./firework_image/fw01/16.gif", "./firework_image/fw01/17.gif",
-    "./firework_image/fw01/18.gif", "./firework_image/fw01/19.gif", "./firework_image/fw01/20.gif"];
-
-    let fw02 = ["./firework_image/fw02/0.gif", "./firework_image/fw02/1.gif","./firework_image/fw02/2.gif",
-      "./firework_image/fw02/3.gif", "./firework_image/fw02/4.gif", "./firework_image/fw02/5.gif",
-      "./firework_image/fw02/6.gif", "./firework_image/fw02/7.gif", "./firework_image/fw02/8.gif",
-      "./firework_image/fw02/9.gif", "./firework_image/fw02/10.gif","./firework_image/fw02/11.gif",
-      "./firework_image/fw02/12.gif", "./firework_image/fw02/13.gif", "./firework_image/fw02/14.gif",
-      "./firework_image/fw02/15.gif", "./firework_image/fw02/16.gif", "./firework_image/fw02/17.gif",
-      "./firework_image/fw02/18.gif", "./firework_image/fw02/19.gif", "./firework_image/fw02/20.gif",
-      "./firework_image/fw02/21.gif", "./firework_image/fw02/22.gif", "./firework_image/fw02/23.gif",
-      "./firework_image/fw02/24.gif", "./firework_image/fw02/25.gif", "./firework_image/fw02/26.gif",
-      "./firework_image/fw02/27.gif", "./firework_image/fw02/28.gif", "./firework_image/fw02/29.gif",
-      "./firework_image/fw02/30.gif", "./firework_image/fw02/31.gif", "./firework_image/fw02/32.gif",
-      "./firework_image/fw02/33.gif"];
 
 
-    let fw03 = ["./firework_image/fw03/0.gif", "./firework_image/fw03/1.gif","./firework_image/fw03/2.gif",
-      "./firework_image/fw03/3.gif", "./firework_image/fw03/4.gif", "./firework_image/fw03/5.gif",
-      "./firework_image/fw03/6.gif", "./firework_image/fw03/7.gif", "./firework_image/fw03/8.gif",
-      "./firework_image/fw03/9.gif", "./firework_image/fw03/10.gif","./firework_image/fw03/11.gif",
-      "./firework_image/fw03/12.gif", "./firework_image/fw03/13.gif", "./firework_image/fw03/14.gif",
-      "./firework_image/fw03/15.gif", "./firework_image/fw03/16.gif", "./firework_image/fw03/17.gif",
-      "./firework_image/fw03/18.gif", "./firework_image/fw03/19.gif", "./firework_image/fw03/20.gif"];
 
 
-    let fw04 = ["./firework_image/fw04/0.gif", "./firework_image/fw04/1.gif","./firework_image/fw04/2.gif",
-      "./firework_image/fw04/3.gif", "./firework_image/fw04/4.gif", "./firework_image/fw04/5.gif",
-      "./firework_image/fw04/6.gif", "./firework_image/fw04/7.gif", "./firework_image/fw04/8.gif",
-      "./firework_image/fw04/9.gif", "./firework_image/fw04/10.gif","./firework_image/fw04/11.gif",
-      "./firework_image/fw04/12.gif", "./firework_image/fw04/13.gif", "./firework_image/fw04/14.gif",
-      "./firework_image/fw04/15.gif", "./firework_image/fw04/16.gif", "./firework_image/fw04/17.gif",
-      "./firework_image/fw04/18.gif", "./firework_image/fw04/19.gif", "./firework_image/fw04/20.gif"];
 
-
-      let fw09 = ["./firework_image/fw09/0.gif", "./firework_image/fw09/1.gif","./firework_image/fw09/2.gif",
-        "./firework_image/fw09/3.gif", "./firework_image/fw09/4.gif", "./firework_image/fw09/5.gif",
-        "./firework_image/fw09/6.gif", "./firework_image/fw09/7.gif", "./firework_image/fw09/8.gif",
-        "./firework_image/fw09/9.gif", "./firework_image/fw09/10.gif","./firework_image/fw09/11.gif",
-        "./firework_image/fw09/12.gif", "./firework_image/fw09/13.gif", "./firework_image/fw09/14.gif",
-        "./firework_image/fw09/15.gif", "./firework_image/fw09/16.gif", "./firework_image/fw09/17.gif",
-        "./firework_image/fw09/18.gif", "./firework_image/fw09/19.gif", "./firework_image/fw09/20.gif",
-        "./firework_image/fw09/21.gif", "./firework_image/fw09/22.gif", "./firework_image/fw09/23.gif",
-        "./firework_image/fw09/24.gif", "./firework_image/fw09/25.gif", "./firework_image/fw09/26.gif",
-        "./firework_image/fw09/27.gif", "./firework_image/fw09/28.gif", "./firework_image/fw09/29.gif",
-        "./firework_image/fw09/30.gif", "./firework_image/fw09/31.gif", "./firework_image/fw09/32.gif",
-        "./firework_image/fw09/33.gif"];
-
-
-    let fw08 = ["./firework_image/fw08/0.gif", "./firework_image/fw08/1.gif","./firework_image/fw08/2.gif",
-      "./firework_image/fw08/3.gif", "./firework_image/fw08/4.gif", "./firework_image/fw08/5.gif",
-      "./firework_image/fw08/6.gif", "./firework_image/fw08/7.gif", "./firework_image/fw08/8.gif",
-      "./firework_image/fw08/9.gif", "./firework_image/fw08/10.gif","./firework_image/fw08/11.gif",
-      "./firework_image/fw08/12.gif", "./firework_image/fw08/13.gif", "./firework_image/fw08/14.gif",
-      "./firework_image/fw08/15.gif", "./firework_image/fw08/16.gif", "./firework_image/fw08/17.gif",
-      "./firework_image/fw08/18.gif", "./firework_image/fw08/19.gif", "./firework_image/fw08/20.gif",
-      "./firework_image/fw08/21.gif", "./firework_image/fw08/22.gif", "./firework_image/fw08/23.gif",
-      "./firework_image/fw08/24.gif", "./firework_image/fw08/25.gif", "./firework_image/fw08/26.gif"];
-
-      let fw11 = ["./firework_image/fw11/0.gif", "./firework_image/fw11/1.gif","./firework_image/fw11/2.gif",
-        "./firework_image/fw11/3.gif", "./firework_image/fw11/4.gif", "./firework_image/fw11/5.gif",
-        "./firework_image/fw11/6.gif", "./firework_image/fw11/7.gif", "./firework_image/fw11/8.gif",
-        "./firework_image/fw11/9.gif", "./firework_image/fw11/10.gif","./firework_image/fw11/11.gif",
-        "./firework_image/fw11/12.gif", "./firework_image/fw11/13.gif", "./firework_image/fw11/14.gif",
-        "./firework_image/fw11/15.gif", "./firework_image/fw11/16.gif", "./firework_image/fw11/17.gif",
-        "./firework_image/fw11/18.gif", "./firework_image/fw11/19.gif", "./firework_image/fw11/20.gif",
-        "./firework_image/fw11/21.gif", "./firework_image/fw11/22.gif", "./firework_image/fw11/23.gif",
-        "./firework_image/fw11/24.gif", "./firework_image/fw11/25.gif", "./firework_image/fw11/26.gif",
-        "./firework_image/fw11/27.gif", "./firework_image/fw11/28.gif", "./firework_image/fw11/29.gif",
-        "./firework_image/fw11/30.gif", "./firework_image/fw11/31.gif", "./firework_image/fw11/32.gif",
-        "./firework_image/fw11/33.gif"];
-
-
-  const headerStage = new createjs.Stage("headerCanvas");
-  const headerBackground = new createjs.Shape();
-  headerBackground.graphics.beginFill("#000").drawRect(0, 0, 700, 50);
-  let headerLabel = new createjs.Text("Fireworks Show", "30px Oxygen", "#FFF");
-  headerLabel.x = 250;
-  headerLabel.y = 0;
-  headerStage.addChild(headerBackground, headerLabel);
-  headerStage.update();
-
+  let recordingLabel = new createjs.Text("Start Recording", "26px Arial", "green");
   let showArr = [{
     time: "",
     xcoord: "",
@@ -96,40 +16,79 @@ document.addEventListener('DOMContentLoaded', () => {
   let showTime = "";
   let startTime = "";
   let endTime = "";
-  let recordingLabel = new createjs.Text("Start Recording", "26px Arial", "green");
+
+
 
 
 
   function playShow(){
+    console.log(showArr);
+    if (showArr[0].images === ""){
+      showArr = showArr.slice(1);
+    }
 
     if (showArr.empty) {
       return;
     } else if ((Date.now() - showTime) - showArr[0].time <= 1000 || (Date.now() - showTime) - showArr[0].time >= -1000) {
-
         createjs.Ticker.addEventListener("tick", showTick);
     } else {
       playShow();
     }
-
-    let imagesdup = showArr[0].images;
-    let x = showArr[0].xcoord;
-    let y = showArr[0].ycoord;
-
-
-
-
+    let imagesdup1 = showArr[0].images;
+    let x1 = showArr[0].xcoord;
+    let y1 = showArr[0].ycoord;
+    let imagesdup2 = showArr[1].images;
+    let x2 = showArr[1].xcoord;
+    let y2 = showArr[1].ycoord;
+    let imagesdup3 = showArr[2].images;
+    let x3 = showArr[2].xcoord;
+    let y3 = showArr[2].ycoord;
+    let imagesdup4 = showArr[3].images;
+    let x4 = showArr[3].xcoord;
+    let y4 = showArr[3].ycoord;
+    let imagesdup5 = showArr[4].images;
+    let x5 = showArr[4].xcoord;
+    let y5 = showArr[4].ycoord;
 
     function showTick() {
-      let bitmapImage = new createjs.Bitmap(imagesdup[0]);
-      bitmapImage.x = x;
-      bitmapImage.y = y;
-      bitmapImage.width = 200;
-      bitmapImage.height = 200;
-      stage.addChild(bitmapImage);
+      let bitmapImage1 = new createjs.Bitmap(imagesdup1[0]);
+      bitmapImage1.x = x1;
+      bitmapImage1.y = y1;
+      bitmapImage1.width = 200;
+      bitmapImage1.height = 200;
+      stage.addChild(bitmapImage1);
+      let bitmapImage2 = new createjs.Bitmap(imagesdup2[0]);
+      bitmapImage2.x = x2;
+      bitmapImage2.y = y2;
+      bitmapImage2.width = 200;
+      bitmapImage2.height = 200;
+      stage.addChild(bitmapImage2);
+      let bitmapImage3 = new createjs.Bitmap(imagesdup3[0]);
+      bitmapImage3.x = x3;
+      bitmapImage3.y = y3;
+      bitmapImage3.width = 200;
+      bitmapImage3.height = 200;
+      let bitmapImage4 = new createjs.Bitmap(imagesdup4[0]);
+      bitmapImage4.x = x4;
+      bitmapImage4.y = y4;
+      bitmapImage4.width = 200;
+      bitmapImage4.height = 200;
+      stage.addChild(bitmapImage3);
+      stage.addChild(bitmapImage4);
+      let bitmapImage5 = new createjs.Bitmap(imagesdup5[0]);
+      bitmapImage5.x = x5;
+      bitmapImage5.y = y5;
+      bitmapImage5.width = 200;
+      bitmapImage5.height = 200;
+      stage.addChild(bitmapImage5);
       stage.update();
-      showArr = showArr.slice(1);
-      imagesdup = imagesdup.slice(1);
-      if (imagesdup.length === 0) {
+      showArr = showArr.slice(5);
+      imagesdup1 = imagesdup1.slice(1);
+      imagesdup2 = imagesdup2.slice(1);
+      imagesdup3 = imagesdup3.slice(1);
+      imagesdup4 = imagesdup4.slice(1);
+      imagesdup5 = imagesdup5.slice(1);
+      if (imagesdup1.length === 0) {
         stage.removeAllChildren();
         createjs.Ticker.removeEventListener("tick", showTick);
         stage.addChild(rectBackground);
@@ -244,16 +203,51 @@ document.addEventListener('DOMContentLoaded', () => {
   function handleClickfw01() {
 
 
-    let imagesdup = fw01;
-    let x = Math.random() * 600;
-    let y = Math.random() * 400;
-
+    let imagesdup1 = fw01;
+    let imagesdup2 = fw01;
+    let imagesdup3 = fw01;
+    let imagesdup4 = fw01;
+    let imagesdup5 = fw01;
+    let x1 = Math.random() * 600;
+    let y1 = Math.random() * 400;
+    let x2 = Math.random() * 600;
+    let y2 = Math.random() * 400;
+    let x3 = Math.random() * 600;
+    let y3 = Math.random() * 400;
+    let x4 = Math.random() * 600;
+    let y4 = Math.random() * 400;
+    let x5 = Math.random() * 600;
+    let y5 = Math.random() * 400;
     if (startTime !== "") {
       showArr.push({
         time: (Date.now() - startTime),
-        xcoord: x,
-        ycoord: y,
-        images: imagesdup
+        xcoord: x1,
+        ycoord: y1,
+        images: imagesdup1
+      },
+      {
+        time: (Date.now() - startTime),
+        xcoord: x2,
+        ycoord: y2,
+        images: imagesdup2
+      },
+      {
+        time: (Date.now() - startTime),
+        xcoord: x3,
+        ycoord: y3,
+        images: imagesdup3
+      },
+      {
+        time: (Date.now() - startTime),
+        xcoord: x4,
+        ycoord: y4,
+        images: imagesdup4
+      },
+      {
+        time: (Date.now() - startTime),
+        xcoord: x5,
+        ycoord: y5,
+        images: imagesdup5
       });
     }
 
@@ -261,15 +255,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     function tick01() {
-      let bitmap01 = new createjs.Bitmap(imagesdup[0]);
-      bitmap01.x = x;
-      bitmap01.y = y;
+      let bitmap01 = new createjs.Bitmap(imagesdup1[0]);
+      let bitmap02 = new createjs.Bitmap(imagesdup2[0]);
+      let bitmap03 = new createjs.Bitmap(imagesdup3[0]);
+      let bitmap04 = new createjs.Bitmap(imagesdup4[0]);
+      let bitmap05 = new createjs.Bitmap(imagesdup5[0]);
+      bitmap01.x = x1;
+      bitmap01.y = y1;
       bitmap01.width = 200;
       bitmap01.height = 200;
+      bitmap02.x = x2;
+      bitmap02.y = y2;
+      bitmap02.width = 200;
+      bitmap02.height = 200;
+      bitmap03.x = x3;
+      bitmap03.y = y3;
+      bitmap03.width = 200;
+      bitmap03.height = 200;
+      bitmap04.x = x4;
+      bitmap04.y = y4;
+      bitmap04.width = 200;
+      bitmap04.height = 200;
+      bitmap05.x = x5;
+      bitmap05.y = y5;
+      bitmap05.width = 200;
+      bitmap05.height = 200;
       stage.addChild(bitmap01);
+      stage.addChild(bitmap02);
+      stage.addChild(bitmap03);
+      stage.addChild(bitmap04);
+      stage.addChild(bitmap05);
       stage.update();
-      imagesdup = imagesdup.slice(1);
-      if (imagesdup.length === 0) {
+      imagesdup1 = imagesdup1.slice(1);
+      imagesdup2 = imagesdup2.slice(1);
+      imagesdup3 = imagesdup3.slice(1);
+      imagesdup4 = imagesdup4.slice(1);
+      imagesdup5 = imagesdup5.slice(1);
+      if (imagesdup1.length === 0) {
         stage.removeAllChildren();
         createjs.Ticker.removeEventListener("tick", tick01);
         stage.addChild(rectBackground);
@@ -295,31 +317,95 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function handleClickfw02() {
 
-    let imagesdup = fw02;
-    let x = Math.random() * 600;
-    let y = Math.random() * 400;
-
+    let imagesdup1 = fw02;
+    let imagesdup2 = fw02;
+    let imagesdup3 = fw02;
+    let imagesdup4 = fw02;
+    let imagesdup5 = fw02;
+    let x1 = Math.random() * 600;
+    let y1 = Math.random() * 400;
+    let x2 = Math.random() * 600;
+    let y2 = Math.random() * 400;
+    let x3 = Math.random() * 600;
+    let y3 = Math.random() * 400;
+    let x4 = Math.random() * 600;
+    let y4 = Math.random() * 400;
+    let x5 = Math.random() * 600;
+    let y5 = Math.random() * 400;
     if (startTime !== "") {
       showArr.push({
         time: (Date.now() - startTime),
-        xcoord: x,
-        ycoord: y,
-        images: imagesdup
+        xcoord: x1,
+        ycoord: y1,
+        images: imagesdup1
+      },
+      {
+        time: (Date.now() - startTime),
+        xcoord: x2,
+        ycoord: y2,
+        images: imagesdup2
+      },
+      {
+        time: (Date.now() - startTime),
+        xcoord: x3,
+        ycoord: y3,
+        images: imagesdup3
+      },
+      {
+        time: (Date.now() - startTime),
+        xcoord: x4,
+        ycoord: y4,
+        images: imagesdup4
+      },
+      {
+        time: (Date.now() - startTime),
+        xcoord: x5,
+        ycoord: y5,
+        images: imagesdup5
       });
     }
+
     createjs.Ticker.addEventListener("tick", tick02);
 
 
     function tick02() {
-      let bitmap02 = new createjs.Bitmap(imagesdup[0]);
-      bitmap02.x = x;
-      bitmap02.y = y;
+      let bitmap01 = new createjs.Bitmap(imagesdup1[0]);
+      let bitmap02 = new createjs.Bitmap(imagesdup2[0]);
+      let bitmap03 = new createjs.Bitmap(imagesdup3[0]);
+      let bitmap04 = new createjs.Bitmap(imagesdup4[0]);
+      let bitmap05 = new createjs.Bitmap(imagesdup5[0]);
+      bitmap01.x = x1;
+      bitmap01.y = y1;
+      bitmap01.width = 200;
+      bitmap01.height = 200;
+      bitmap02.x = x2;
+      bitmap02.y = y2;
       bitmap02.width = 200;
       bitmap02.height = 200;
+      bitmap03.x = x3;
+      bitmap03.y = y3;
+      bitmap03.width = 200;
+      bitmap03.height = 200;
+      bitmap04.x = x4;
+      bitmap04.y = y4;
+      bitmap04.width = 200;
+      bitmap04.height = 200;
+      bitmap05.x = x5;
+      bitmap05.y = y5;
+      bitmap05.width = 200;
+      bitmap05.height = 200;
+      stage.addChild(bitmap01);
       stage.addChild(bitmap02);
+      stage.addChild(bitmap03);
+      stage.addChild(bitmap04);
+      stage.addChild(bitmap05);
       stage.update();
-      imagesdup = imagesdup.slice(1);
-      if (imagesdup.length === 0) {
+      imagesdup1 = imagesdup1.slice(1);
+      imagesdup2 = imagesdup2.slice(1);
+      imagesdup3 = imagesdup3.slice(1);
+      imagesdup4 = imagesdup4.slice(1);
+      imagesdup5 = imagesdup5.slice(1);
+      if (imagesdup1.length === 0) {
         stage.removeAllChildren();
         createjs.Ticker.removeEventListener("tick", tick02);
         stage.addChild(rectBackground);
@@ -344,31 +430,95 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function handleClickfw03() {
 
-    let imagesdup = fw03;
-    let x = Math.random() * 600;
-    let y = Math.random() * 400;
-
+    let imagesdup1 = fw03;
+    let imagesdup2 = fw03;
+    let imagesdup3 = fw03;
+    let imagesdup4 = fw03;
+    let imagesdup5 = fw03;
+    let x1 = Math.random() * 600;
+    let y1 = Math.random() * 400;
+    let x2 = Math.random() * 600;
+    let y2 = Math.random() * 400;
+    let x3 = Math.random() * 600;
+    let y3 = Math.random() * 400;
+    let x4 = Math.random() * 600;
+    let y4 = Math.random() * 400;
+    let x5 = Math.random() * 600;
+    let y5 = Math.random() * 400;
     if (startTime !== "") {
       showArr.push({
         time: (Date.now() - startTime),
-        xcoord: x,
-        ycoord: y,
-        images: imagesdup
+        xcoord: x1,
+        ycoord: y1,
+        images: imagesdup1
+      },
+      {
+        time: (Date.now() - startTime),
+        xcoord: x2,
+        ycoord: y2,
+        images: imagesdup2
+      },
+      {
+        time: (Date.now() - startTime),
+        xcoord: x3,
+        ycoord: y3,
+        images: imagesdup3
+      },
+      {
+        time: (Date.now() - startTime),
+        xcoord: x4,
+        ycoord: y4,
+        images: imagesdup4
+      },
+      {
+        time: (Date.now() - startTime),
+        xcoord: x5,
+        ycoord: y5,
+        images: imagesdup5
       });
     }
+
     createjs.Ticker.addEventListener("tick", tick03);
 
 
     function tick03() {
-      let bitmap03 = new createjs.Bitmap(imagesdup[0]);
-      bitmap03.x = x;
-      bitmap03.y = y;
+      let bitmap01 = new createjs.Bitmap(imagesdup1[0]);
+      let bitmap02 = new createjs.Bitmap(imagesdup2[0]);
+      let bitmap03 = new createjs.Bitmap(imagesdup3[0]);
+      let bitmap04 = new createjs.Bitmap(imagesdup4[0]);
+      let bitmap05 = new createjs.Bitmap(imagesdup5[0]);
+      bitmap01.x = x1;
+      bitmap01.y = y1;
+      bitmap01.width = 200;
+      bitmap01.height = 200;
+      bitmap02.x = x2;
+      bitmap02.y = y2;
+      bitmap02.width = 200;
+      bitmap02.height = 200;
+      bitmap03.x = x3;
+      bitmap03.y = y3;
       bitmap03.width = 200;
       bitmap03.height = 200;
+      bitmap04.x = x4;
+      bitmap04.y = y4;
+      bitmap04.width = 200;
+      bitmap04.height = 200;
+      bitmap05.x = x5;
+      bitmap05.y = y5;
+      bitmap05.width = 200;
+      bitmap05.height = 200;
+      stage.addChild(bitmap01);
+      stage.addChild(bitmap02);
       stage.addChild(bitmap03);
+      stage.addChild(bitmap04);
+      stage.addChild(bitmap05);
       stage.update();
-      imagesdup = imagesdup.slice(1);
-      if (imagesdup.length === 0) {
+      imagesdup1 = imagesdup1.slice(1);
+      imagesdup2 = imagesdup2.slice(1);
+      imagesdup3 = imagesdup3.slice(1);
+      imagesdup4 = imagesdup4.slice(1);
+      imagesdup5 = imagesdup5.slice(1);
+      if (imagesdup1.length === 0) {
         stage.removeAllChildren();
         createjs.Ticker.removeEventListener("tick", tick03);
         stage.addChild(rectBackground);
@@ -393,31 +543,95 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function handleClickfw04() {
 
-    let imagesdup = fw04;
-    let x = Math.random() * 600;
-    let y = Math.random() * 400;
-
+    let imagesdup1 = fw04;
+    let imagesdup2 = fw04;
+    let imagesdup3 = fw04;
+    let imagesdup4 = fw04;
+    let imagesdup5 = fw04;
+    let x1 = Math.random() * 600;
+    let y1 = Math.random() * 400;
+    let x2 = Math.random() * 600;
+    let y2 = Math.random() * 400;
+    let x3 = Math.random() * 600;
+    let y3 = Math.random() * 400;
+    let x4 = Math.random() * 600;
+    let y4 = Math.random() * 400;
+    let x5 = Math.random() * 600;
+    let y5 = Math.random() * 400;
     if (startTime !== "") {
       showArr.push({
         time: (Date.now() - startTime),
-        xcoord: x,
-        ycoord: y,
-        images: imagesdup
+        xcoord: x1,
+        ycoord: y1,
+        images: imagesdup1
+      },
+      {
+        time: (Date.now() - startTime),
+        xcoord: x2,
+        ycoord: y2,
+        images: imagesdup2
+      },
+      {
+        time: (Date.now() - startTime),
+        xcoord: x3,
+        ycoord: y3,
+        images: imagesdup3
+      },
+      {
+        time: (Date.now() - startTime),
+        xcoord: x4,
+        ycoord: y4,
+        images: imagesdup4
+      },
+      {
+        time: (Date.now() - startTime),
+        xcoord: x5,
+        ycoord: y5,
+        images: imagesdup5
       });
     }
+
     createjs.Ticker.addEventListener("tick", tick04);
 
 
     function tick04() {
-      let bitmap04 = new createjs.Bitmap(imagesdup[0]);
-      bitmap04.x = x;
-      bitmap04.y = y;
+      let bitmap01 = new createjs.Bitmap(imagesdup1[0]);
+      let bitmap02 = new createjs.Bitmap(imagesdup2[0]);
+      let bitmap03 = new createjs.Bitmap(imagesdup3[0]);
+      let bitmap04 = new createjs.Bitmap(imagesdup4[0]);
+      let bitmap05 = new createjs.Bitmap(imagesdup5[0]);
+      bitmap01.x = x1;
+      bitmap01.y = y1;
+      bitmap01.width = 200;
+      bitmap01.height = 200;
+      bitmap02.x = x2;
+      bitmap02.y = y2;
+      bitmap02.width = 200;
+      bitmap02.height = 200;
+      bitmap03.x = x3;
+      bitmap03.y = y3;
+      bitmap03.width = 200;
+      bitmap03.height = 200;
+      bitmap04.x = x4;
+      bitmap04.y = y4;
       bitmap04.width = 200;
       bitmap04.height = 200;
+      bitmap05.x = x5;
+      bitmap05.y = y5;
+      bitmap05.width = 200;
+      bitmap05.height = 200;
+      stage.addChild(bitmap01);
+      stage.addChild(bitmap02);
+      stage.addChild(bitmap03);
       stage.addChild(bitmap04);
+      stage.addChild(bitmap05);
       stage.update();
-      imagesdup = imagesdup.slice(1);
-      if (imagesdup.length === 0) {
+      imagesdup1 = imagesdup1.slice(1);
+      imagesdup2 = imagesdup2.slice(1);
+      imagesdup3 = imagesdup3.slice(1);
+      imagesdup4 = imagesdup4.slice(1);
+      imagesdup5 = imagesdup5.slice(1);
+      if (imagesdup1.length === 0) {
         stage.removeAllChildren();
         createjs.Ticker.removeEventListener("tick", tick04);
         stage.addChild(rectBackground);
@@ -442,31 +656,95 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function handleClickfw09() {
 
-    let imagesdup = fw09;
-    let x = Math.random() * 600;
-    let y = Math.random() * 400;
-
+    let imagesdup1 = fw09;
+    let imagesdup2 = fw09;
+    let imagesdup3 = fw09;
+    let imagesdup4 = fw09;
+    let imagesdup5 = fw09;
+    let x1 = Math.random() * 600;
+    let y1 = Math.random() * 400;
+    let x2 = Math.random() * 600;
+    let y2 = Math.random() * 400;
+    let x3 = Math.random() * 600;
+    let y3 = Math.random() * 400;
+    let x4 = Math.random() * 600;
+    let y4 = Math.random() * 400;
+    let x5 = Math.random() * 600;
+    let y5 = Math.random() * 400;
     if (startTime !== "") {
       showArr.push({
         time: (Date.now() - startTime),
-        xcoord: x,
-        ycoord: y,
-        images: imagesdup
+        xcoord: x1,
+        ycoord: y1,
+        images: imagesdup1
+      },
+      {
+        time: (Date.now() - startTime),
+        xcoord: x2,
+        ycoord: y2,
+        images: imagesdup2
+      },
+      {
+        time: (Date.now() - startTime),
+        xcoord: x3,
+        ycoord: y3,
+        images: imagesdup3
+      },
+      {
+        time: (Date.now() - startTime),
+        xcoord: x4,
+        ycoord: y4,
+        images: imagesdup4
+      },
+      {
+        time: (Date.now() - startTime),
+        xcoord: x5,
+        ycoord: y5,
+        images: imagesdup5
       });
     }
+
     createjs.Ticker.addEventListener("tick", tick09);
 
 
     function tick09() {
-      let bitmap09 = new createjs.Bitmap(imagesdup[0]);
-      bitmap09.x = x;
-      bitmap09.y = y;
-      bitmap09.width = 200;
-      bitmap09.height = 200;
-      stage.addChild(bitmap09);
+      let bitmap01 = new createjs.Bitmap(imagesdup1[0]);
+      let bitmap02 = new createjs.Bitmap(imagesdup2[0]);
+      let bitmap03 = new createjs.Bitmap(imagesdup3[0]);
+      let bitmap04 = new createjs.Bitmap(imagesdup4[0]);
+      let bitmap05 = new createjs.Bitmap(imagesdup5[0]);
+      bitmap01.x = x1;
+      bitmap01.y = y1;
+      bitmap01.width = 200;
+      bitmap01.height = 200;
+      bitmap02.x = x2;
+      bitmap02.y = y2;
+      bitmap02.width = 200;
+      bitmap02.height = 200;
+      bitmap03.x = x3;
+      bitmap03.y = y3;
+      bitmap03.width = 200;
+      bitmap03.height = 200;
+      bitmap04.x = x4;
+      bitmap04.y = y4;
+      bitmap04.width = 200;
+      bitmap04.height = 200;
+      bitmap05.x = x5;
+      bitmap05.y = y5;
+      bitmap05.width = 200;
+      bitmap05.height = 200;
+      stage.addChild(bitmap01);
+      stage.addChild(bitmap02);
+      stage.addChild(bitmap03);
+      stage.addChild(bitmap04);
+      stage.addChild(bitmap05);
       stage.update();
-      imagesdup = imagesdup.slice(1);
-      if (imagesdup.length === 0) {
+      imagesdup1 = imagesdup1.slice(1);
+      imagesdup2 = imagesdup2.slice(1);
+      imagesdup3 = imagesdup3.slice(1);
+      imagesdup4 = imagesdup4.slice(1);
+      imagesdup5 = imagesdup5.slice(1);
+      if (imagesdup1.length === 0) {
         stage.removeAllChildren();
         createjs.Ticker.removeEventListener("tick", tick09);
         stage.addChild(rectBackground);
@@ -494,31 +772,95 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function handleClickfw08() {
 
-    let imagesdup = fw08;
-    let x = Math.random() * 600;
-    let y = Math.random() * 400;
-
+    let imagesdup1 = fw08;
+    let imagesdup2 = fw08;
+    let imagesdup3 = fw08;
+    let imagesdup4 = fw08;
+    let imagesdup5 = fw08;
+    let x1 = Math.random() * 600;
+    let y1 = Math.random() * 400;
+    let x2 = Math.random() * 600;
+    let y2 = Math.random() * 400;
+    let x3 = Math.random() * 600;
+    let y3 = Math.random() * 400;
+    let x4 = Math.random() * 600;
+    let y4 = Math.random() * 400;
+    let x5 = Math.random() * 600;
+    let y5 = Math.random() * 400;
     if (startTime !== "") {
       showArr.push({
         time: (Date.now() - startTime),
-        xcoord: x,
-        ycoord: y,
-        images: imagesdup
+        xcoord: x1,
+        ycoord: y1,
+        images: imagesdup1
+      },
+      {
+        time: (Date.now() - startTime),
+        xcoord: x2,
+        ycoord: y2,
+        images: imagesdup2
+      },
+      {
+        time: (Date.now() - startTime),
+        xcoord: x3,
+        ycoord: y3,
+        images: imagesdup3
+      },
+      {
+        time: (Date.now() - startTime),
+        xcoord: x4,
+        ycoord: y4,
+        images: imagesdup4
+      },
+      {
+        time: (Date.now() - startTime),
+        xcoord: x5,
+        ycoord: y5,
+        images: imagesdup5
       });
     }
+
     createjs.Ticker.addEventListener("tick", tick08);
 
 
     function tick08() {
-      let bitmap08 = new createjs.Bitmap(imagesdup[0]);
-      bitmap08.x = x;
-      bitmap08.y = y;
-      bitmap08.width = 200;
-      bitmap08.height = 200;
-      stage.addChild(bitmap08);
+      let bitmap01 = new createjs.Bitmap(imagesdup1[0]);
+      let bitmap02 = new createjs.Bitmap(imagesdup2[0]);
+      let bitmap03 = new createjs.Bitmap(imagesdup3[0]);
+      let bitmap04 = new createjs.Bitmap(imagesdup4[0]);
+      let bitmap05 = new createjs.Bitmap(imagesdup5[0]);
+      bitmap01.x = x1;
+      bitmap01.y = y1;
+      bitmap01.width = 200;
+      bitmap01.height = 200;
+      bitmap02.x = x2;
+      bitmap02.y = y2;
+      bitmap02.width = 200;
+      bitmap02.height = 200;
+      bitmap03.x = x3;
+      bitmap03.y = y3;
+      bitmap03.width = 200;
+      bitmap03.height = 200;
+      bitmap04.x = x4;
+      bitmap04.y = y4;
+      bitmap04.width = 200;
+      bitmap04.height = 200;
+      bitmap05.x = x5;
+      bitmap05.y = y5;
+      bitmap05.width = 200;
+      bitmap05.height = 200;
+      stage.addChild(bitmap01);
+      stage.addChild(bitmap02);
+      stage.addChild(bitmap03);
+      stage.addChild(bitmap04);
+      stage.addChild(bitmap05);
       stage.update();
-      imagesdup = imagesdup.slice(1);
-      if (imagesdup.length === 0) {
+      imagesdup1 = imagesdup1.slice(1);
+      imagesdup2 = imagesdup2.slice(1);
+      imagesdup3 = imagesdup3.slice(1);
+      imagesdup4 = imagesdup4.slice(1);
+      imagesdup5 = imagesdup5.slice(1);
+      if (imagesdup1.length === 0) {
         stage.removeAllChildren();
         createjs.Ticker.removeEventListener("tick", tick08);
         stage.addChild(rectBackground);
@@ -544,31 +886,95 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function handleClickfw11() {
 
-    let imagesdup = fw11;
-    let x = Math.random() * 600;
-    let y = Math.random() * 400;
-
+    let imagesdup1 = fw11;
+    let imagesdup2 = fw11;
+    let imagesdup3 = fw11;
+    let imagesdup4 = fw11;
+    let imagesdup5 = fw11;
+    let x1 = Math.random() * 600;
+    let y1 = Math.random() * 400;
+    let x2 = Math.random() * 600;
+    let y2 = Math.random() * 400;
+    let x3 = Math.random() * 600;
+    let y3 = Math.random() * 400;
+    let x4 = Math.random() * 600;
+    let y4 = Math.random() * 400;
+    let x5 = Math.random() * 600;
+    let y5 = Math.random() * 400;
     if (startTime !== "") {
       showArr.push({
         time: (Date.now() - startTime),
-        xcoord: x,
-        ycoord: y,
-        images: imagesdup
+        xcoord: x1,
+        ycoord: y1,
+        images: imagesdup1
+      },
+      {
+        time: (Date.now() - startTime),
+        xcoord: x2,
+        ycoord: y2,
+        images: imagesdup2
+      },
+      {
+        time: (Date.now() - startTime),
+        xcoord: x3,
+        ycoord: y3,
+        images: imagesdup3
+      },
+      {
+        time: (Date.now() - startTime),
+        xcoord: x4,
+        ycoord: y4,
+        images: imagesdup4
+      },
+      {
+        time: (Date.now() - startTime),
+        xcoord: x5,
+        ycoord: y5,
+        images: imagesdup5
       });
     }
+
     createjs.Ticker.addEventListener("tick", tick11);
 
 
     function tick11() {
-      let bitmap11 = new createjs.Bitmap(imagesdup[0]);
-      bitmap11.x = x;
-      bitmap11.y = y;
-      bitmap11.width = 200;
-      bitmap11.height = 200;
-      stage.addChild(bitmap11);
+      let bitmap01 = new createjs.Bitmap(imagesdup1[0]);
+      let bitmap02 = new createjs.Bitmap(imagesdup2[0]);
+      let bitmap03 = new createjs.Bitmap(imagesdup3[0]);
+      let bitmap04 = new createjs.Bitmap(imagesdup4[0]);
+      let bitmap05 = new createjs.Bitmap(imagesdup5[0]);
+      bitmap01.x = x1;
+      bitmap01.y = y1;
+      bitmap01.width = 200;
+      bitmap01.height = 200;
+      bitmap02.x = x2;
+      bitmap02.y = y2;
+      bitmap02.width = 200;
+      bitmap02.height = 200;
+      bitmap03.x = x3;
+      bitmap03.y = y3;
+      bitmap03.width = 200;
+      bitmap03.height = 200;
+      bitmap04.x = x4;
+      bitmap04.y = y4;
+      bitmap04.width = 200;
+      bitmap04.height = 200;
+      bitmap05.x = x5;
+      bitmap05.y = y5;
+      bitmap05.width = 200;
+      bitmap05.height = 200;
+      stage.addChild(bitmap01);
+      stage.addChild(bitmap02);
+      stage.addChild(bitmap03);
+      stage.addChild(bitmap04);
+      stage.addChild(bitmap05);
       stage.update();
-      imagesdup = imagesdup.slice(1);
-      if (imagesdup.length === 0) {
+      imagesdup1 = imagesdup1.slice(1);
+      imagesdup2 = imagesdup2.slice(1);
+      imagesdup3 = imagesdup3.slice(1);
+      imagesdup4 = imagesdup4.slice(1);
+      imagesdup5 = imagesdup5.slice(1);
+      if (imagesdup1.length === 0) {
         stage.removeAllChildren();
         createjs.Ticker.removeEventListener("tick", tick11);
         stage.addChild(rectBackground);
