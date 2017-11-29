@@ -103,50 +103,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (startTime === "") {
       startTime = Date.now();
-      textOutput();
     } else if (endTime === ""){
       endTime = Date.now();
-      textOutput();
     } else {
-
       startTime = "";
       endTime = "";
-      textOutput();
       showTime = Date.now();
       playShow();
     }
   }
-
-  function textOutput() {
-    if (startTime === "") {
-      recordingLabel = new createjs.Text("Start Recording", "26px Arial", "green");
-      recordingCanvas.removeAllChildren();
-
-      recordingCanvas.addChild(recordingLabel);
-      recordingLabel.addEventListener("click", recordingClick);
-      recordingCanvas.update();
-
-    } else if (endTime === ""){
-      recordingLabel = new createjs.Text("Stop Recording", "26px Arial", "red");
-      recordingCanvas.removeAllChildren();
-
-      recordingCanvas.addChild(recordingLabel);
-      recordingLabel.addEventListener("click", recordingClick);
-      recordingCanvas.update();
-    } else {
-      recordingLabel = new createjs.Text("Play my Show", "26px Arial", "blue");
-      recordingCanvas.removeAllChildren();
-
-      recordingCanvas.addChild(recordingLabel);
-      recordingLabel.addEventListener("click", recordingClick);
-      recordingCanvas.update();
-    }
-  }
-
-
-
-
-
 
 
 

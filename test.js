@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   headerStage.update();
 
   let recordingLabel = new createjs.Text("Start Recording", "26px Arial", "green");
+
   let showArr = [{
     time: "",
     xcoord: "",
@@ -150,25 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const recordingCanvas = new createjs.Stage("recordingCanvas");
-  // const hoverBox = new createjs.Shape().graphics.beginFill("black").drawRect(0, 0, 100, 100);
-  // recordingCanvas.enableMouseOver();
-  // hoverBox.on("mouseover", handleMouseOver);
-  // hoverBox.on("mouseout", handleMouseOut);
-  // recordingCanvas.addChild(hoverBox);
-  // recordingCanvas.setChildIndex(hoverBox, 0);
-  // recordingCanvas.update();
-  // function handleMouseOver() {
-  //   hoverBox.graphics.clear().beginFill("yellow").drawRect(0, 0, 100, 80);
-  //   recordingCanvas.addChild(hoverBox);
-  //   recordingCanvas.setChildIndex(hoverBox, 0);
-  //   recordingCanvas.update();
-  // }
-  // function handleMouseOut(){
-  //   hoverBox.graphics.clear().beginFill("black").drawRect(0 , 0, 100, 80);
-  //   recordingCanvas.addChild(hoverBox);
-  //   recordingCanvas.setChildIndex(hoverBox, 0);
-  //   recordingCanvas.update();
-  // }
+
 
 
   recordingLabel.x = 0;
