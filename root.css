@@ -5,7 +5,7 @@ body {
 }
 
 canvas {
-	border: solid 1px rgba(0,0,0,0.05);
+	/* border: solid 1px rgba(0,0,0,0.05); */
 }
 
 div#middleSection {
@@ -21,6 +21,9 @@ div#middleSection {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    background-image: url(https://cdn.wallpapersafari.com/4/30/mGH1yt.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .MainDiv {}

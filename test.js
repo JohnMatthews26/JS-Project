@@ -5,12 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   const headerStage = new createjs.Stage("headerCanvas");
-  const headerBackground = new createjs.Shape();
-  headerBackground.graphics.beginFill("#000").drawRect(0, 0, 700, 50);
+
   let headerLabel = new createjs.Text("Fireworks Show", "30px Oxygen", "#FFF");
   headerLabel.x = 250;
   headerLabel.y = 0;
-  headerStage.addChild(headerBackground, headerLabel);
+  headerStage.addChild(headerLabel);
   headerStage.update();
 
   let recordingLabel = new createjs.Text("Start Recording", "26px Arial", "green");
