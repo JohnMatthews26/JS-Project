@@ -3,7 +3,6 @@ import { fw01, fw02, fw03, fw04, fw08, fw09, fw11 } from './images';
 document.addEventListener('DOMContentLoaded', () => {
 
 
-
   const headerStage = new createjs.Stage("headerCanvas");
 
   let headerLabel = new createjs.Text("Fireworks Show", "30px Oxygen", "#FFF");
@@ -13,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   headerStage.update();
 
   let recordingLabel = new createjs.Text("Start Recording", "26px Arial", "green");
+
 
   let showArr = [{
     time: "",
@@ -128,36 +128,48 @@ document.addEventListener('DOMContentLoaded', () => {
     if (startTime === "") {
       recordingLabel = new createjs.Text("Start Recording", "26px Arial", "green");
       recordingCanvas.removeAllChildren();
-
+      recordingCanvas.addChild(recordingBackground);
       recordingCanvas.addChild(recordingLabel);
+      recordingLabel.x = 10;
+      recordingLabel.y = 10;
+      recordingBackground.addEventListener("click", recordingClick);
       recordingLabel.addEventListener("click", recordingClick);
       recordingCanvas.update();
 
     } else if (endTime === ""){
       recordingLabel = new createjs.Text("Stop Recording", "26px Arial", "red");
       recordingCanvas.removeAllChildren();
-
+      recordingCanvas.addChild(recordingBackground);
       recordingCanvas.addChild(recordingLabel);
+      recordingLabel.x = 10;
+      recordingLabel.y = 10;
+      recordingBackground.addEventListener("click", recordingClick);
       recordingLabel.addEventListener("click", recordingClick);
       recordingCanvas.update();
     } else {
       recordingLabel = new createjs.Text("Play my Show", "26px Arial", "blue");
       recordingCanvas.removeAllChildren();
-
+      recordingCanvas.addChild(recordingBackground);
       recordingCanvas.addChild(recordingLabel);
+      recordingLabel.x = 10;
+      recordingLabel.y = 10;
+      recordingBackground.addEventListener("click", recordingClick);
       recordingLabel.addEventListener("click", recordingClick);
       recordingCanvas.update();
     }
   }
 
   const recordingCanvas = new createjs.Stage("recordingCanvas");
+  const recordingBackground = new createjs.Shape();
+  recordingBackground.graphics.beginFill("#000").drawRect(0, 0, 200, 50);
+  recordingCanvas.addChild(recordingBackground);
+  recordingCanvas.update();
 
 
-
-  recordingLabel.x = 0;
-  recordingLabel.y = 0;
-
+  recordingLabel.x = 10;
+  recordingLabel.y = 10;
   recordingLabel.addEventListener("click", recordingClick);
+  recordingBackground.addEventListener("click", recordingClick);
 
   recordingCanvas.addChild(recordingLabel);
   recordingCanvas.update();
