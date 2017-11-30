@@ -4,7 +4,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+  const headerStage = new createjs.Stage("headerCanvas");
 
+  let headerLabel = new createjs.Text("Fireworks Show", "30px Oxygen", "#FFF");
+  headerLabel.x = 250;
+  headerLabel.y = 0;
+  headerStage.addChild(headerLabel);
+  headerStage.update();
+
+  let recordingLabel = new createjs.Text("Start Recording", "26px Arial", "green");
 
 
   let showArr = [{
@@ -103,12 +111,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (startTime === "") {
       startTime = Date.now();
+      textOutput();
     } else if (endTime === ""){
       endTime = Date.now();
+      textOutput();
     } else {
 
       startTime = "";
       endTime = "";
+      textOutput();
       showTime = Date.now();
       playShow();
     }
@@ -116,14 +127,53 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function textOutput() {
     if (startTime === "") {
-      return ("Start Recording");
+      recordingLabel = new createjs.Text("Start Recording", "26px Arial", "green");
+      recordingCanvas.removeAllChildren();
+      recordingCanvas.addChild(recordingBackground);
+      recordingCanvas.addChild(recordingLabel);
+      recordingLabel.x = 10;
+      recordingLabel.y = 10;
+      recordingBackground.addEventListener("click", recordingClick);
+      recordingCanvas.update();
 
     } else if (endTime === ""){
-      return ("Stop Recording");
+      recordingLabel = new createjs.Text("Stop Recording", "26px Arial", "red");
+      recordingCanvas.removeAllChildren();
+      recordingCanvas.addChild(recordingBackground);
+      recordingCanvas.addChild(recordingLabel);
+      recordingLabel.x = 10;
+      recordingLabel.y = 10;
+      recordingBackground.addEventListener("click", recordingClick);
+      recordingCanvas.update();
     } else {
-      return ("Play My Show");
+      recordingLabel = new createjs.Text("Play my Show", "26px Arial", "blue");
+      recordingCanvas.removeAllChildren();
+      recordingCanvas.addChild(recordingBackground);
+      recordingCanvas.addChild(recordingLabel);
+      recordingLabel.x = 10;
+      recordingLabel.y = 10;
+      recordingBackground.addEventListener("click", recordingClick);
+      recordingCanvas.update();
     }
   }
+
+  const recordingCanvas = new createjs.Stage("recordingCanvas");
+  const recordingBackground = new createjs.Shape();
+  recordingBackground.graphics.beginFill("#000").drawRect(0, 0, 200, 50);
+  recordingCanvas.addChild(recordingBackground);
+  recordingCanvas.update();
+
+
+  recordingLabel.x = 10;
+  recordingLabel.y = 10;
+
+  recordingBackground.addEventListener("click", recordingClick);
+
+  recordingCanvas.addChild(recordingLabel);
+  recordingCanvas.update();
+
+
+
 
 
 

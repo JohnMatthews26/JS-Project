@@ -77,15 +77,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   const headerStage = new createjs.Stage("headerCanvas");
-  const headerBackground = new createjs.Shape();
-  headerBackground.graphics.beginFill("#000").drawRect(0, 0, 700, 50);
+
   let headerLabel = new createjs.Text("Fireworks Show", "30px Oxygen", "#FFF");
   headerLabel.x = 250;
   headerLabel.y = 0;
-  headerStage.addChild(headerBackground, headerLabel);
+  headerStage.addChild(headerLabel);
   headerStage.update();
 
   let recordingLabel = new createjs.Text("Start Recording", "26px Arial", "green");
+
+
   let showArr = [{
     time: "",
     xcoord: "",
@@ -200,54 +201,45 @@ document.addEventListener('DOMContentLoaded', () => {
     if (startTime === "") {
       recordingLabel = new createjs.Text("Start Recording", "26px Arial", "green");
       recordingCanvas.removeAllChildren();
-
+      recordingCanvas.addChild(recordingBackground);
       recordingCanvas.addChild(recordingLabel);
-      recordingLabel.addEventListener("click", recordingClick);
+      recordingLabel.x = 10;
+      recordingLabel.y = 10;
+      recordingBackground.addEventListener("click", recordingClick);
       recordingCanvas.update();
 
     } else if (endTime === ""){
       recordingLabel = new createjs.Text("Stop Recording", "26px Arial", "red");
       recordingCanvas.removeAllChildren();
-
+      recordingCanvas.addChild(recordingBackground);
       recordingCanvas.addChild(recordingLabel);
-      recordingLabel.addEventListener("click", recordingClick);
+      recordingLabel.x = 10;
+      recordingLabel.y = 10;
+      recordingBackground.addEventListener("click", recordingClick);
       recordingCanvas.update();
     } else {
       recordingLabel = new createjs.Text("Play my Show", "26px Arial", "blue");
       recordingCanvas.removeAllChildren();
-
+      recordingCanvas.addChild(recordingBackground);
       recordingCanvas.addChild(recordingLabel);
-      recordingLabel.addEventListener("click", recordingClick);
+      recordingLabel.x = 10;
+      recordingLabel.y = 10;
+      recordingBackground.addEventListener("click", recordingClick);
       recordingCanvas.update();
     }
   }
 
   const recordingCanvas = new createjs.Stage("recordingCanvas");
-  // const hoverBox = new createjs.Shape().graphics.beginFill("black").drawRect(0, 0, 100, 100);
-  // recordingCanvas.enableMouseOver();
-  // hoverBox.on("mouseover", handleMouseOver);
-  // hoverBox.on("mouseout", handleMouseOut);
-  // recordingCanvas.addChild(hoverBox);
-  // recordingCanvas.setChildIndex(hoverBox, 0);
-  // recordingCanvas.update();
-  // function handleMouseOver() {
-  //   hoverBox.graphics.clear().beginFill("yellow").drawRect(0, 0, 100, 80);
-  //   recordingCanvas.addChild(hoverBox);
-  //   recordingCanvas.setChildIndex(hoverBox, 0);
-  //   recordingCanvas.update();
-  // }
-  // function handleMouseOut(){
-  //   hoverBox.graphics.clear().beginFill("black").drawRect(0 , 0, 100, 80);
-  //   recordingCanvas.addChild(hoverBox);
-  //   recordingCanvas.setChildIndex(hoverBox, 0);
-  //   recordingCanvas.update();
-  // }
+  const recordingBackground = new createjs.Shape();
+  recordingBackground.graphics.beginFill("#000").drawRect(0, 0, 200, 50);
+  recordingCanvas.addChild(recordingBackground);
+  recordingCanvas.update();
 
 
-  recordingLabel.x = 0;
-  recordingLabel.y = 0;
+  recordingLabel.x = 10;
+  recordingLabel.y = 10;
 
-  recordingLabel.addEventListener("click", recordingClick);
+  recordingBackground.addEventListener("click", recordingClick);
 
   recordingCanvas.addChild(recordingLabel);
   recordingCanvas.update();
