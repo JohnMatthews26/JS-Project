@@ -133,6 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
       recordingLabel.x = 10;
       recordingLabel.y = 10;
       recordingBackground.addEventListener("click", recordingClick);
+      recordingLabel.addEventListener("click", recordingClick);
       recordingCanvas.update();
 
     } else if (endTime === ""){
@@ -143,6 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
       recordingLabel.x = 10;
       recordingLabel.y = 10;
       recordingBackground.addEventListener("click", recordingClick);
+      recordingLabel.addEventListener("click", recordingClick);
       recordingCanvas.update();
     } else {
       recordingLabel = new createjs.Text("Play my Show", "26px Arial", "blue");
@@ -152,6 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
       recordingLabel.x = 10;
       recordingLabel.y = 10;
       recordingBackground.addEventListener("click", recordingClick);
+      recordingLabel.addEventListener("click", recordingClick);
       recordingCanvas.update();
     }
   }
@@ -165,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   recordingLabel.x = 10;
   recordingLabel.y = 10;
-
+  recordingLabel.addEventListener("click", recordingClick);
   recordingBackground.addEventListener("click", recordingClick);
 
   recordingCanvas.addChild(recordingLabel);
