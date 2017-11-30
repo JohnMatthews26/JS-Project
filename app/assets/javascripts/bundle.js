@@ -75,7 +75,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 document.addEventListener('DOMContentLoaded', () => {
 
 
-
   const headerStage = new createjs.Stage("headerCanvas");
 
   let headerLabel = new createjs.Text("Fireworks Show", "30px Oxygen", "#FFF");

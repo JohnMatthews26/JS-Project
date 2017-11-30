@@ -3,7 +3,6 @@ import { fw01, fw02, fw03, fw04, fw08, fw09, fw11 } from './images';
 document.addEventListener('DOMContentLoaded', () => {
 
 
-
   const headerStage = new createjs.Stage("headerCanvas");
 
   let headerLabel = new createjs.Text("Fireworks Show", "30px Oxygen", "#FFF");
