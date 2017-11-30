@@ -106,10 +106,22 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (endTime === ""){
       endTime = Date.now();
     } else {
+
       startTime = "";
       endTime = "";
       showTime = Date.now();
       playShow();
+    }
+  }
+
+  function textOutput() {
+    if (startTime === "") {
+      return ("Start Recording");
+
+    } else if (endTime === ""){
+      return ("Stop Recording");
+    } else {
+      return ("Play My Show");
     }
   }
 
